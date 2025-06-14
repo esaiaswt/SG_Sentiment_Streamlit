@@ -1,6 +1,6 @@
 # Singapore News Happiness Index
 
-![Example Map Output](SG_Sentiment_Example.PNG)
+![Example Map Output](SG_Sentiment_Example.png)
 
 This project is a fully automated pipeline that crawls Singapore news, performs Google Gemini-powered sentiment and location analysis, and visualizes the results as emoji markers on a Singapore map. The project is developed via Vibe Coding using GitHub Copilot on Visual Studio Code.
 
