@@ -63,6 +63,10 @@ def load_gemini_api_key():
         config = yaml.safe_load(f)
     return config.get('GEMINI_API_KEY')
 
+# Global counters for Gemini token usage
+GEMINI_TOTAL_IN_TOKENS = 0
+GEMINI_TOTAL_OUT_TOKENS = 0
+
 def gemini_analyze_article(api_key, title, content):
     """
     Use Google Gemini 2.0 Flash to get best place in Singapore for marker and sentiment analysis.
@@ -115,6 +119,16 @@ def gemini_analyze_article(api_key, title, content):
                 print(f"Gemini API HTTP error {resp.status_code}: {resp.text}")
                 return None, None, None, None, None
             result = resp.json()
+            # Print Gemini token usage if available
+            usage = result.get('usageMetadata', {})
+            in_tokens = usage.get('promptTokenCount')
+            out_tokens = usage.get('candidatesTokenCount')
+            if in_tokens is not None:
+                GEMINI_TOTAL_IN_TOKENS += in_tokens
+            if out_tokens is not None:
+                GEMINI_TOTAL_OUT_TOKENS += out_tokens
+            if in_tokens is not None or out_tokens is not None:
+                print(f"Gemini tokens used: in={in_tokens}, out={out_tokens}, total in={GEMINI_TOTAL_IN_TOKENS}, total out={GEMINI_TOTAL_OUT_TOKENS}")
             if not result or 'candidates' not in result or not result['candidates']:
                 print(f"Gemini API error: No candidates in response: {result}")
                 return None, None, None, None, None
