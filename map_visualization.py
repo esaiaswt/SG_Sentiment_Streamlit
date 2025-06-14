@@ -9,6 +9,7 @@ import requests
 from collections import Counter
 import yaml
 import os
+from dotenv import load_dotenv
 
 def get_sg_location_coords(place_name):
     """
@@ -58,10 +59,8 @@ def get_sg_location_coords(place_name):
     return None
 
 def load_gemini_api_key():
-    config_path = os.path.join(os.path.dirname(__file__), 'config.yaml')
-    with open(config_path, 'r') as f:
-        config = yaml.safe_load(f)
-    return config.get('GEMINI_API_KEY')
+    load_dotenv()
+    return os.getenv('GEMINI_API_KEY')
 
 # Global counters for Gemini token usage
 GEMINI_TOTAL_IN_TOKENS = 0

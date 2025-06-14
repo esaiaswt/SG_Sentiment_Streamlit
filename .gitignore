@@ -73,3 +73,4 @@ Thumbs.db
 
 # Ignore all YAML files
 *.yaml
+config.yaml
