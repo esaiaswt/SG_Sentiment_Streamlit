@@ -6,13 +6,15 @@ This project is a fully automated pipeline that crawls Singapore news, performs 
 
 ## Features
 - **News Crawling**: Scrapes latest news from The Straits Times, Channel NewsAsia, Today Online, and Mothership.
-- **Sentiment & Location Analysis**: Uses Google Gemini 2.0 Flash to analyze each article for sentiment (positive/negative/neutral), a reason, an emoji, and the most relevant Singapore location.
+- **Sentiment & Location Analysis**: Uses Google Gemini 2.0 Flash to analyze each article for sentiment (positive/negative/neutral), a reason, an emoji, and the most relevant Singapore location. If the article does not mention Singapore, Gemini is also asked if the article is Singapore-related.
 - **Geocoding**: Dynamically geocodes locations using OneMap.sg (primary) and Nominatim (fallback).
-- **Visualization**: Displays emoji markers on a Folium map of Singapore, with popups showing news source, title, sentiment, reason, emoji, and a clickable article URL.
+- **Visualization**: Displays emoji markers on a Folium map of Singapore, with popups showing news source, title, sentiment, reason, emoji, and a clickable article URL. Overlapping markers are automatically separated for clarity.
 - **Summary Table**: Shows an overall sentiment marker with a summary table of sentiment counts per news outlet, subtotals, total, and last updated timestamp.
 - **Home Button**: A Home button reloads the map to its initial state.
 - **Caching**: All Gemini results are cached in `processed_articles.json` to avoid redundant API calls.
 - **Efficient Pipeline**: Only new articles are processed by Gemini; previously processed articles are loaded from cache.
+- **Token Usage Tracking**: Prints Gemini API in/out/total token usage for every call.
+- **.env Security**: API keys are loaded from `.env` and never pushed to GitHub.
 - **Error Handling**: Robust error handling for crawling, Gemini API, and geocoding.
 
 ## Project Structure
@@ -22,7 +24,7 @@ This project is a fully automated pipeline that crawls Singapore news, performs 
 - `scheduler.py` — (Optional) For scheduled/automated runs
 - `run_pipeline.py` — Main entry point to run the full pipeline
 - `requirements.txt` — All Python dependencies
-- `config.yaml` — Stores Gemini API key
+- `.env` — Stores Gemini API key (never push to GitHub)
 - `articles_with_sentiment.json` — All articles with basic sentiment
 - `processed_articles.json` — Cache of Gemini results
 - `singapore_news_sentiment_map.html` — Output map
@@ -32,9 +34,9 @@ This project is a fully automated pipeline that crawls Singapore news, performs 
    ```sh
    pip install -r requirements.txt
    ```
-2. **Add your Gemini API key** to `config.yaml`:
-   ```yaml
-   GEMINI_API_KEY: "your_google_gemini_api_key_here"
+2. **Add your Gemini API key** to `.env`:
+   ```env
+   GEMINI_API_KEY="your_google_gemini_api_key_here"
    ```
 3. **Run the pipeline**:
    ```sh
@@ -51,14 +53,16 @@ See `requirements.txt` for all dependencies. Major packages:
 - feedparser
 - selenium
 - webdriver-manager
-- pyyaml
+- python-dotenv
 - branca
 
 ## Notes
 - Only today's news is visualized on the map.
 - The Home button reloads the map to its initial state.
 - Gemini API is only called for new articles; all results are cached.
-- This project was developed via Vibe Coding using GitHub Copilot on Visual Studio Code.
+- `.env` and API keys are never pushed to GitHub (see `.gitignore`).
+- If the article does not mention Singapore, Gemini is asked if it is Singapore-related and only such articles are visualized.
+- Gemini API token usage is printed for every call.
 
 ---
 
