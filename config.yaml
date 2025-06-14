@@ -1,0 +1,3 @@
+# config.yaml
+# Place your Google Gemini API key here
+GEMINI_API_KEY: "AIzaSyCXNXAILqAACPWAanYK7w_rzQYOj9Q95to"
