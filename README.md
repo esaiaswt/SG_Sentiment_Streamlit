@@ -63,6 +63,7 @@ See `requirements.txt` for all dependencies. Major packages:
 - `.env` and API keys are never pushed to GitHub (see `.gitignore`).
 - If the article does not mention Singapore, Gemini is asked if it is Singapore-related and only such articles are visualized.
 - Gemini API token usage is printed for every call.
+- **To perform a completely new run (clear all Gemini cache and reprocess all articles), delete `processed_articles.json` before running the pipeline.**
 
 ---
 
