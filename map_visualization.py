@@ -66,14 +66,15 @@ def load_gemini_api_key():
 def gemini_analyze_article(api_key, title, content):
     """
     Use Google Gemini 2.0 Flash to get best place in Singapore for marker and sentiment analysis.
-    Returns (place_name, sentiment, reason, emoji)
+    Returns (place_name, sentiment, reason, emoji, is_sg_related)
     """
     import requests
     import time
     import re
     url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" + api_key
     prompt = f"""
-    Given the following Singapore news article, answer in JSON with these fields:
+    Given the following news article, answer in JSON with these fields:
+    - is_sg_related: true if the article is about Singapore, false otherwise
     - place: The best Singapore place/building/office to put a map marker for this article (be specific, e.g. 'Changi Airport', 'Orchard Towers', 'Google Asia Pacific', etc.)
     - sentiment: positive, negative, or neutral
     - reason: a short reason for the sentiment
@@ -109,18 +110,18 @@ def gemini_analyze_article(api_key, title, content):
                     continue  # retry after sleep
                 except Exception as e:
                     print(f"Error parsing retryDelay from Gemini 429: {e}")
-                    return None, None, None, None
+                    return None, None, None, None, None
             if resp.status_code != 200:
                 print(f"Gemini API HTTP error {resp.status_code}: {resp.text}")
-                return None, None, None, None
+                return None, None, None, None, None
             result = resp.json()
             if not result or 'candidates' not in result or not result['candidates']:
                 print(f"Gemini API error: No candidates in response: {result}")
-                return None, None, None, None
+                return None, None, None, None, None
             text = result['candidates'][0]['content']['parts'][0].get('text', '')
             if not text:
                 print(f"Gemini API error: No text in response: {result}")
-                return None, None, None, None
+                return None, None, None, None, None
             # --- Clean Markdown code block if present ---
             text_clean = text.strip()
             if text_clean.startswith('```'):
@@ -130,15 +131,15 @@ def gemini_analyze_article(api_key, title, content):
             import json as pyjson
             try:
                 parsed = pyjson.loads(text_clean)
-                return parsed.get('place'), parsed.get('sentiment'), parsed.get('reason'), parsed.get('emoji')
+                return parsed.get('place'), parsed.get('sentiment'), parsed.get('reason'), parsed.get('emoji'), parsed.get('is_sg_related')
             except Exception as e:
                 print(f"Gemini API JSON parse error: {e}\nRaw text: {text}")
-                return None, None, None, None
+                return None, None, None, None, None
         except Exception as e:
             print(f"Gemini API request error: {e}")
-            return None, None, None, None
+            return None, None, None, None, None
     print("Gemini API: Exceeded retry attempts after rate limit.")
-    return None, None, None, None
+    return None, None, None, None, None
 
 def is_in_singapore(lat, lon):
     """Return True if coordinates are within Singapore's bounding box."""
@@ -152,6 +153,8 @@ def plot_emojis_on_map(articles_with_sentiment):
     sentiments = []
     marker_count = 0
     outlet_sentiment = {}
+    # Track marker positions to avoid overlap
+    marker_positions = {}
     # Debug: count articles with valid Gemini fields
     valid_articles = [a for a in articles_with_sentiment if a.get('place') and a.get('sentiment') and a.get('emoji')]
     print(f"Articles with valid Gemini fields: {len(valid_articles)} / {len(articles_with_sentiment)}")
@@ -168,6 +171,10 @@ def plot_emojis_on_map(articles_with_sentiment):
         sentiment = article.get('sentiment')
         reason = article.get('reason')
         emoji = article.get('emoji')
+        is_sg_related = article.get('is_sg_related')
+        if is_sg_related is not True:
+            print(f"  Skipping non-Singapore related article: {title}")
+            continue
         if not place_name or not sentiment or not emoji:
             print(f"  Gemini result missing for: {title}")
             continue
@@ -183,12 +190,24 @@ def plot_emojis_on_map(articles_with_sentiment):
         if not coord:
             print(f"  Could not geocode place: {place_name}")
             continue
-        print(f"  Placing marker at: {coord} for {place_name}")
+        # --- Overlap avoidance logic ---
+        coord_key = (round(coord[0], 6), round(coord[1], 6))
+        count = marker_positions.get(coord_key, 0)
+        marker_positions[coord_key] = count + 1
+        # Offset each marker slightly if there are overlaps
+        offset_distance = 0.00015  # ~15 meters
+        angle = (count * 45) % 360  # Spread out in a circle
+        import math
+        lat_offset = offset_distance * math.cos(math.radians(angle))
+        lon_offset = offset_distance * math.sin(math.radians(angle))
+        marker_lat = coord[0] + lat_offset
+        marker_lon = coord[1] + lon_offset
+        print(f"  Placing marker at: {[marker_lat, marker_lon]} for {place_name} (offset {count})")
         # Add news source URL to popup if available
         url_html = f'<br><a href="{url}" target="_blank">Read full article</a>' if url else ''
         popup = folium.Popup(f"<b>{article['source']}</b><br>{title}<br>{reason}<br>Sentiment: {sentiment} {emoji}{url_html}", max_width=300)
         folium.Marker(
-            location=[coord[0], coord[1]],  # Remove artificial offset
+            location=[marker_lat, marker_lon],
             popup=popup,
             icon=folium.DivIcon(html=f"""
                 <div style='font-size:32px; line-height:32px; text-align:center; background: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border: 1px solid #888; font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', 'Twemoji Mozilla', 'Arial';'>
@@ -287,22 +306,42 @@ def process_articles_with_gemini(articles):
         article_id = article.get('url') or article.get('title')
         if not article_id:
             continue
-        if article_id in processed:
-            # Use cached Gemini result
-            gemini_result = processed[article_id]
+        title = article.get('title', '')
+        content = article.get('content', '')
+        # If 'Singapore' is mentioned, set is_sg_related = True and skip Gemini relevance check
+        if 'singapore' in title.lower() or 'singapore' in content.lower():
+            is_sg_related = True
+            # Optionally, use previous Gemini result for place/sentiment if available
+            if article_id in processed:
+                gemini_result = processed[article_id]
+                gemini_result['is_sg_related'] = True
+            else:
+                # Only run Gemini for place/sentiment, but force is_sg_related True
+                place_name, sentiment, reason, emoji, _ = gemini_analyze_article(api_key, title, content)
+                gemini_result = {
+                    'place': place_name,
+                    'sentiment': sentiment,
+                    'reason': reason,
+                    'emoji': emoji,
+                    'is_sg_related': True
+                }
+                processed[article_id] = gemini_result
+                updated = True
         else:
-            # Call Gemini and cache result
-            title = article.get('title', '')
-            content = article.get('content', '')
-            place_name, sentiment, reason, emoji = gemini_analyze_article(api_key, title, content)
-            gemini_result = {
-                'place': place_name,
-                'sentiment': sentiment,
-                'reason': reason,
-                'emoji': emoji
-            }
-            processed[article_id] = gemini_result
-            updated = True
+            # Only call Gemini if not already cached
+            if article_id in processed and 'is_sg_related' in processed[article_id]:
+                gemini_result = processed[article_id]
+            else:
+                place_name, sentiment, reason, emoji, is_sg_related = gemini_analyze_article(api_key, title, content)
+                gemini_result = {
+                    'place': place_name,
+                    'sentiment': sentiment,
+                    'reason': reason,
+                    'emoji': emoji,
+                    'is_sg_related': is_sg_related
+                }
+                processed[article_id] = gemini_result
+                updated = True
         # Merge Gemini result into article
         article.update(gemini_result)
         results.append(article)

@@ -70,3 +70,6 @@ venv.bak/
 
 # Windows
 Thumbs.db
+
+# Ignore all YAML files
+*.yaml

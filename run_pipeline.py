@@ -27,7 +27,14 @@ with open('articles_with_sentiment.json', 'w', encoding='utf-8') as f:
     json.dump(results, f, ensure_ascii=False, indent=2)
 print(f"Saved sentiment results to articles_with_sentiment.json.")
 
+# Step 2.5: Gemini Singapore relevance & place analysis
+print("Running Gemini Singapore relevance & place analysis...")
+results_with_gemini = map_visualization.process_articles_with_gemini(results)
+with open('articles_with_sentiment.json', 'w', encoding='utf-8') as f:
+    json.dump(results_with_gemini, f, ensure_ascii=False, indent=2)
+print(f"Saved Gemini-processed results to articles_with_sentiment.json.")
+
 # Step 3: Map visualization
 print("Generating map visualization...")
-map_visualization.plot_emojis_on_map(results)
+map_visualization.plot_emojis_on_map(results_with_gemini)
 print("Pipeline complete. Open singapore_news_sentiment_map.html to view the map.")
