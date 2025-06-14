@@ -213,15 +213,15 @@ def plot_emojis_on_map(articles_with_sentiment):
         overall_emoji = {'positive': '😊', 'negative': '😞', 'neutral': '😐'}.get(overall, '😐')
         # Build HTML table for outlet sentiment counts
         table_html = '<table border="1" style="border-collapse:collapse;font-size:12px;margin-top:6px;">'
-        table_html += '<tr><th>News Outlet</th><th>Positive</th><th>Negative</th><th>Neutral</th></tr>'
+        table_html += '<tr><th>News Outlet</th><th>Positive</th><th>Neutral</th><th>Negative</th></tr>'
         pos_total = neg_total = neu_total = 0
         for outlet, counts in outlet_sentiment.items():
-            table_html += f'<tr><td>{outlet}</td><td>{counts["positive"]}</td><td>{counts["negative"]}</td><td>{counts["neutral"]}</td></tr>'
+            table_html += f'<tr><td>{outlet}</td><td>{counts["positive"]}</td><td>{counts["neutral"]}</td><td>{counts["negative"]}</td></tr>'
             pos_total += counts["positive"]
             neg_total += counts["negative"]
             neu_total += counts["neutral"]
         total_articles = pos_total + neg_total + neu_total
-        table_html += f'<tr style="font-weight:bold;background:#f0f0f0;"><td>Subtotal</td><td>{pos_total}</td><td>{neg_total}</td><td>{neu_total}</td></tr>'
+        table_html += f'<tr style="font-weight:bold;background:#f0f0f0;"><td>Subtotal</td><td>{pos_total}</td><td>{neu_total}</td><td>{neg_total}</td></tr>'
         table_html += f'<tr style="font-weight:bold;background:#e0e0e0;"><td colspan="4">Total News Articles: {total_articles}</td></tr>'
         table_html += '</table>'
         # Add last updated date and time (Singapore time)

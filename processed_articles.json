@@ -556,5 +556,197 @@
     "sentiment": "negative",
     "reason": "A person was convicted of murder and received a life sentence, indicating a serious crime and tragic event.",
     "emoji": "😞"
+  },
+  "https://mothership.sg/2025/06/singapore-airlines-hire-affected-jetstar-staff/": {
+    "place": "Singapore Airlines Headquarters",
+    "sentiment": "positive",
+    "reason": "SIA is offering job opportunities to retrenched Jetstar Asia employees, showing support for the aviation industry and helping individuals impacted by job losses.",
+    "emoji": "👍"
+  },
+  "https://mothership.sg/2025/06/malaysian-man-allegedly-depart-singapore-illegally-tuas-checkpoint/": {
+    "place": "Tuas Checkpoint",
+    "sentiment": "negative",
+    "reason": "A Malaysian man was arrested for attempting to illegally leave Singapore, highlighting a security breach.",
+    "emoji": "🚨"
+  },
+  "https://mothership.sg/2025/06/air-india-crash-survivor-escape/": {
+    "place": "Changi Airport",
+    "sentiment": "negative",
+    "reason": "The news article describes a harrowing escape from a near-fatal plane crash, highlighting the traumatic experience of a survivor.  While the crash may not have occurred in Singapore, Changi Airport is a logical place to associate the article as it's a major international airport and the news is relevant to air travel safety.",
+    "emoji": "😱"
+  },
+  "https://mothership.sg/2025/06/cyclist-accident-tanah-merah-coast-road/": {
+    "place": "Tanah Merah Coast Road, Singapore",
+    "sentiment": "negative",
+    "reason": "A cyclist was involved in an accident with a tipper truck, resulting in injury.",
+    "emoji": "🙁"
+  },
+  "https://mothership.sg/2025/06/kallang-basin-swimming-complex-stwilfred-sport-centre-cease-operations/": {
+    "place": "Kallang Basin Swimming Complex & St Wilfred Sports Centre",
+    "sentiment": "negative",
+    "reason": "The closure of two well-established sports facilities will likely be disappointing to residents who use them.  The news focuses on their demolition and replacement with public housing, highlighting a loss of recreational space.",
+    "emoji": "🙁"
+  },
+  "https://mothership.sg/2025/06/henna-business-singaporean-paris/": {
+    "place": "Singapore (general location, exact address unavailable from text)",
+    "sentiment": "positive",
+    "reason": "A Singaporean successfully built a business from a young age and expanded it internationally, showcasing entrepreneurial success.",
+    "emoji": "🎉"
+  },
+  "https://mothership.sg/2025/06/man-evade-arrest-throw-controlled-drug-kallang-river/": {
+    "place": "Kallang River",
+    "sentiment": "negative",
+    "reason": "A significant drug bust involving a large quantity of cannabis and 'Ice' occurred near the Kallang River, highlighting criminal activity.",
+    "emoji": "🚨"
+  },
+  "https://mothership.sg/2025/06/2-men-jailed-for-solid-gold-toilet-theft/": {
+    "place": "British Embassy, Singapore",
+    "sentiment": "negative",
+    "reason": "The news reports a theft, a negative event.  While the theft didn't occur in Singapore, the location is relevant as it relates to potential diplomatic implications or news coverage in Singapore.",
+    "emoji": "😞"
+  },
+  "https://mothership.sg/2025/06/man-arrested-debtor-note-pig-organs-boon-keng/": {
+    "place": "Boon Keng",
+    "sentiment": "negative",
+    "reason": "A man was arrested for loanshark harassment, and pig organs were found outside a home, indicating a violent crime.",
+    "emoji": "😠"
+  },
+  "https://mothership.sg/2025/06/jetstar-shut-down-changi-airport-costs/": {
+    "place": "Changi Airport",
+    "sentiment": "negative",
+    "reason": "The news reports that increased costs at Changi Airport contributed to the closure of Jetstar Asia, indicating a negative impact on businesses operating at the airport.",
+    "emoji": "🙁"
+  },
+  "https://mothership.sg/2025/06/iran-israel-singapore-mfa/": {
+    "place": "Ministry of Foreign Affairs (MFA), Singapore",
+    "sentiment": "negative",
+    "reason": "The Ministry of Foreign Affairs is issuing a travel advisory due to increased tensions and violence in the region, urging Singaporeans to avoid travel to affected areas. This indicates a negative and potentially dangerous situation.",
+    "emoji": "⚠️"
+  },
+  "https://mothership.sg/2025/06/gan-siow-huang-handshake-press-conference/": {
+    "place": "Parliament of Singapore",
+    "sentiment": "neutral",
+    "reason": "The news reports a statement from a man regarding an interaction with a Member of Parliament.  There's no positive or negative judgment implied in the headline or description.",
+    "emoji": "😐"
+  },
+  "https://mothership.sg/2025/06/thai-celebrity-police-doctor-arrested-trafficking-date-rape-drugs/": {
+    "place": "No specific Singapore location mentioned",
+    "sentiment": "negative",
+    "reason": "The news reports the arrest of a person for allegedly trafficking date rape drugs, which is a serious crime with negative implications.",
+    "emoji": "😠"
+  },
+  "https://mothership.sg/2025/06/us-review-aukus-america-first/": {
+    "place": "United States Embassy, Singapore",
+    "sentiment": "neutral",
+    "reason": "The news article reports on a US internal review, not a specific event or policy impacting Singapore directly.  The review's outcome is unknown, making it neither positive nor negative for Singapore.",
+    "emoji": "🤔"
+  },
+  "https://mothership.sg/2025/06/singapore-help-new-chinese-immigrants-integrate-better/": {
+    "place": "None specified in article",
+    "sentiment": "positive",
+    "reason": "The article focuses on a group's efforts to improve the integration of new immigrants, which is generally viewed as a positive societal goal.",
+    "emoji": "👍"
+  },
+  "https://mothership.sg/2025/06/wala-wala-holland-v-closing-down/": {
+    "place": "Wala Wala Cafe Bar, Holland Village",
+    "sentiment": "negative",
+    "reason": "The cafe is closing down after 32 years, signifying the end of a long-standing establishment.",
+    "emoji": "😢"
+  },
+  "https://mothership.sg/2025/06/customer-overpay-paynow-westgate-porridge-stall/": {
+    "place": "Westgate",
+    "sentiment": "negative",
+    "reason": "A customer accidentally overpaid a significant amount (S$540 instead of S$5.40) at a porridge stall, highlighting a system error and potential financial hardship for the customer.",
+    "emoji": "🙁"
+  },
+  "https://mothership.sg/2025/06/hawker-abc-brickworks-forks-plates-allegedly-stolen/": {
+    "place": "ABC Brickworks Food Centre",
+    "sentiment": "negative",
+    "reason": "A hawker stall at ABC Brickworks lost a significant amount of cutlery and crockery in a short period, suggesting theft or significant breakage, which is a negative event for the business.",
+    "emoji": "🙁"
+  },
+  "https://mothership.sg/2025/06/rumel-pizza-5-dollars/": {
+    "place": "Bugis+",
+    "sentiment": "positive",
+    "reason": "A new restaurant offering affordable Neapolitan pizzas is opening, which is generally positive news for food lovers.",
+    "emoji": "🍕"
+  },
+  "https://mothership.sg/2025/06/first-session-15th-parliament-singapore/": {
+    "place": "Parliament House, Singapore",
+    "sentiment": "neutral",
+    "reason": "The news reports a factual event, the opening of a new parliamentary session.  It doesn't express positive or negative opinions.",
+    "emoji": "📅"
+  },
+  "https://mothership.sg/2025/06/lim-chu-kang-road-closed/": {
+    "place": "Lim Chu Kang Road",
+    "sentiment": "neutral",
+    "reason": "The news reports the closure of a temporary runway, a factual event without inherently positive or negative connotations. It marks the end of an era but doesn't carry strong emotional weight.",
+    "emoji": "😐"
+  },
+  "https://mothership.sg/2025/06/farhanna-farid-break-own-record-again-10th-time-weightlifting/": {
+    "place": "Not specified in the article",
+    "sentiment": "positive",
+    "reason": "Farhanna Farid achieved a significant personal best, rewriting her own record for the tenth time. This reflects a positive accomplishment in powerlifting.",
+    "emoji": "💪"
+  },
+  "https://mothership.sg/2025/06/air-india-flight-phuket-land-bomb-threat/": {
+    "place": "Phuket Airport, Thailand",
+    "sentiment": "negative",
+    "reason": "An emergency landing due to a bomb threat is a serious and negative event.",
+    "emoji": "🚨"
+  },
+  "https://mothership.sg/2025/06/police-take-down-blackpink-concert-tickets/": {
+    "place": "Singapore Police Force Headquarters",
+    "sentiment": "negative",
+    "reason": "The news indicates that illegal ticket sales are being cracked down on, suggesting a negative impact on those attempting to resell Blackpink tickets at inflated prices.",
+    "emoji": "🚫"
+  },
+  "https://mothership.sg/2025/06/family-last-selfie-air-india-171-flight/": {
+    "place": "None specified in article",
+    "sentiment": "negative",
+    "reason": "The news reports on a family's tragic last selfie taken before a fatal plane crash, highlighting the loss of life and the family's thwarted relocation plans.",
+    "emoji": "💔"
+  },
+  "https://mothership.sg/2025/06/jetstar-asia-income-insurance-goodwill/": {
+    "place": "Jetstar Office in Singapore (or relevant airport terminal)",
+    "sentiment": "positive",
+    "reason": "Income Insurance showing goodwill by covering affected Jetstar customers demonstrates positive customer service and potentially avoids negative publicity.",
+    "emoji": "👍"
+  },
+  "https://mothership.sg/2025/06/27-year-old-woman-whose-lifelong-dream-was-to-be-flight-attendant-killed-in-air-india-plane-crash/": {
+    "place": "Air India (relevant airport would depend on the crash location,  information not provided in the text)",
+    "sentiment": "negative",
+    "reason": "The news reports the death of a young woman pursuing her dream, a tragic event.",
+    "emoji": "😢"
+  },
+  "https://mothership.sg/2025/06/singaporepore-woman-vietnam-admitted-kkh-obstetric-issues/": {
+    "place": "KKH (Khoo Teck Puat Hospital)",
+    "sentiment": "negative",
+    "reason": "The woman experienced obstetric issues after surgery, indicating a negative health outcome.",
+    "emoji": "🙁"
+  },
+  "https://mothership.sg/2025/06/msian-youth-double-murder/": {
+    "place": "Malaysia",
+    "sentiment": "negative",
+    "reason": "The news reports a double murder allegedly committed by a 17-year-old boy, highlighting violence and tragedy.",
+    "emoji": "💔"
+  },
+  "https://mothership.sg/2025/06/israel-launches-strike-on-irans-nuclear-military-sites/": {
+    "place": "Israel Embassy, Singapore",
+    "sentiment": "negative",
+    "reason": "The news reports a military strike, which is inherently negative and likely to increase geopolitical tensions.",
+    "emoji": "💥"
+  },
+  "https://www.channelnewsasia.com/asia/two-australians-bali-shooting-villa-munggu-beach-manhunt-5182141": {
+    "place": "Bali, Indonesia",
+    "sentiment": "negative",
+    "reason": "Reports of a shooting resulting in one death and one injury.",
+    "emoji": "😞"
+  },
+  "https://mothership.sg/2025/06/tway-singapore-jeju-air-tickets/": {
+    "place": "Singapore Changi Airport",
+    "sentiment": "positive",
+    "reason": "The news highlights affordable travel options from Singapore to Jeju, which is generally viewed favorably.",
+    "emoji": "✈️"
   }
 }

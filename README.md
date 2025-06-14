@@ -5,7 +5,7 @@
 This project is a fully automated pipeline that crawls Singapore news, performs Google Gemini-powered sentiment and location analysis, and visualizes the results as emoji markers on a Singapore map. The project is developed via Vibe Coding using GitHub Copilot on Visual Studio Code.
 
 ## Features
-- **News Crawling**: Scrapes latest news from The Straits Times, Channel NewsAsia, and Today Online.
+- **News Crawling**: Scrapes latest news from The Straits Times, Channel NewsAsia, Today Online, and Mothership.
 - **Sentiment & Location Analysis**: Uses Google Gemini 2.0 Flash to analyze each article for sentiment (positive/negative/neutral), a reason, an emoji, and the most relevant Singapore location.
 - **Geocoding**: Dynamically geocodes locations using OneMap.sg (primary) and Nominatim (fallback).
 - **Visualization**: Displays emoji markers on a Folium map of Singapore, with popups showing news source, title, sentiment, reason, emoji, and a clickable article URL.
