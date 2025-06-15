@@ -66,7 +66,8 @@ def load_gemini_api_key():
 GEMINI_TOTAL_IN_TOKENS = 0
 GEMINI_TOTAL_OUT_TOKENS = 0
 
-def gemini_analyze_article(api_key, title, content):
+def gemini_analyze_article(api_key, title, content, idx=None, total=None):
+    global GEMINI_TOTAL_IN_TOKENS, GEMINI_TOTAL_OUT_TOKENS
     """
     Use Google Gemini 2.0 Flash to get best place in Singapore for marker and sentiment analysis.
     Returns (place_name, sentiment, reason, emoji, is_sg_related)
@@ -108,6 +109,8 @@ def gemini_analyze_article(api_key, title, content):
                                     retry_delay = val * 60
                                 else:
                                     retry_delay = val
+                    if idx is not None and total is not None:
+                        print(f"Processing article {idx} of {total} before Gemini API rate limit hit.")
                     print(f"Gemini API rate limit hit. Sleeping for {retry_delay} seconds before retrying...")
                     time.sleep(retry_delay)
                     continue  # retry after sleep
@@ -174,8 +177,9 @@ def plot_emojis_on_map(articles_with_sentiment):
     if len(valid_articles) == 0 and len(articles_with_sentiment) > 0:
         print("No articles with valid Gemini fields found. Forcing reprocessing with Gemini...")
         articles_with_sentiment = process_articles_with_gemini(articles_with_sentiment)
-    for article in articles_with_sentiment:
-        print(f"Processing article: {article.get('title', '')[:60]}")
+    total_articles = len(articles_with_sentiment)
+    for idx, article in enumerate(articles_with_sentiment, 1):
+        print(f"Processing article {idx} of {total_articles}: {article.get('title', '')[:60]}")
         title = article.get('title', '')
         content = article.get('content', '')
         url = article.get('url', '')
@@ -315,14 +319,23 @@ def process_articles_with_gemini(articles):
     api_key = load_gemini_api_key()
     updated = False
     results = []
-    for article in articles:
+    total_articles = len(articles)
+    for idx, article in enumerate(articles, 1):
         article_id = article.get('url') or article.get('title')
         if not article_id:
             continue
         title = article.get('title', '')
         content = article.get('content', '')
-        # If 'Singapore' is mentioned, set is_sg_related = True and skip Gemini relevance check
-        if 'singapore' in title.lower() or 'singapore' in content.lower():
+        location = article.get('location', '')
+        category = article.get('category', '')
+        # If 'Singapore' is mentioned in title/content, or location is Singapore, or category is Singapore/local, set is_sg_related = True
+        if (
+            'singapore' in title.lower() or
+            'singapore' in content.lower() or
+            location.lower() == 'singapore' or
+            ('singapore' in category.lower() if isinstance(category, str) else False) or
+            ('local' in category.lower() if isinstance(category, str) else False)
+        ):
             is_sg_related = True
             # Optionally, use previous Gemini result for place/sentiment if available
             if article_id in processed:
@@ -330,7 +343,7 @@ def process_articles_with_gemini(articles):
                 gemini_result['is_sg_related'] = True
             else:
                 # Only run Gemini for place/sentiment, but force is_sg_related True
-                place_name, sentiment, reason, emoji, _ = gemini_analyze_article(api_key, title, content)
+                place_name, sentiment, reason, emoji, _ = gemini_analyze_article(api_key, title, content, idx, total_articles)
                 gemini_result = {
                     'place': place_name,
                     'sentiment': sentiment,
@@ -345,7 +358,7 @@ def process_articles_with_gemini(articles):
             if article_id in processed and 'is_sg_related' in processed[article_id]:
                 gemini_result = processed[article_id]
             else:
-                place_name, sentiment, reason, emoji, is_sg_related = gemini_analyze_article(api_key, title, content)
+                place_name, sentiment, reason, emoji, is_sg_related = gemini_analyze_article(api_key, title, content, idx, total_articles)
                 gemini_result = {
                     'place': place_name,
                     'sentiment': sentiment,
