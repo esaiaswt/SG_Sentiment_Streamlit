@@ -1,9 +1,9 @@
 import streamlit as st
 import subprocess
-import threading
 import time
 import os
 from streamlit.components.v1 import html
+from datetime import datetime, timedelta
 
 # Set Streamlit page config
 def set_page_config():
@@ -42,13 +42,13 @@ st.markdown(
 LOG_FILE = "pipeline_log.txt"
 MAP_FILE = "singapore_news_sentiment_map.html"
 PIPELINE_SCRIPT = "run_pipeline.py"
+INTERVAL_HOURS = 8
 
 # Function to run pipeline and capture output
 def run_pipeline_with_progress():
     progress = st.progress(0)
     log_box = st.empty()
     logs = []
-    
     process = subprocess.Popen(
         ["python", PIPELINE_SCRIPT],
         stdout=subprocess.PIPE,
@@ -56,7 +56,6 @@ def run_pipeline_with_progress():
         text=True,
         bufsize=1
     )
-    
     total_steps = 100  # Dummy steps for progress bar
     step = 0
     for line in process.stdout:
@@ -68,32 +67,41 @@ def run_pipeline_with_progress():
     progress.progress(1.0)
     return logs
 
-# Function to clear screen and show map
 def show_map():
     st.empty()
     if os.path.exists(MAP_FILE):
         with open(MAP_FILE, "r", encoding="utf-8") as f:
             map_html = f.read()
-        html(map_html, height=800, width=None)  # Use full width
+        html(map_html, height=800, width=None)
     else:
         st.error(f"Map file {MAP_FILE} not found.")
 
-# Scheduler thread to run pipeline every 8 hours
-def scheduler_thread():
-    while True:
-        run_pipeline_with_progress()
-        time.sleep(8 * 60 * 60)  # 8 hours
-
 def main():
-    if "initialized" not in st.session_state:
-        st.session_state.initialized = True
-        # Start scheduler in background
-        threading.Thread(target=scheduler_thread, daemon=True).start()
-        # Run pipeline at start
+    now = datetime.now()
+    if "last_run" not in st.session_state:
+        st.session_state.last_run = None
+    if "next_run" not in st.session_state:
+        st.session_state.next_run = now
+    # If it's time to run the pipeline
+    if st.session_state.last_run is None or now >= st.session_state.next_run:
+        st.info("Updating data, please wait...")
         run_pipeline_with_progress()
+        st.session_state.last_run = now
+        st.session_state.next_run = now + timedelta(hours=INTERVAL_HOURS)
         st.rerun()
     else:
+        # Show countdown to next run
+        seconds_left = int((st.session_state.next_run - now).total_seconds())
+        hours, remainder = divmod(seconds_left, 3600)
+        minutes, seconds = divmod(remainder, 60)
+        st.success(f"Next data update in {hours:02d}:{minutes:02d}:{seconds:02d}")
         show_map()
+        # Auto-refresh every minute to update countdown
+        st.experimental_singleton.clear()
+        st_autorefresh = st.empty()
+        st_autorefresh.write("")
+        time.sleep(1)
+        st.rerun()
 
 if __name__ == "__main__":
     main()
