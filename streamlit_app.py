@@ -97,11 +97,7 @@ def main():
         st.success(f"Next data update in {hours:02d}:{minutes:02d}:{seconds:02d}")
         show_map()
         # Auto-refresh every minute to update countdown
-        st.experimental_singleton.clear()
-        st_autorefresh = st.empty()
-        st_autorefresh.write("")
-        time.sleep(1)
-        st.rerun()
+        st.experimental_rerun() if seconds_left <= 60 else None
 
 if __name__ == "__main__":
     main()
