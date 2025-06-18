@@ -3,8 +3,7 @@ import subprocess
 import time
 import os
 from streamlit.components.v1 import html
-from datetime import datetime, timedelta
-from streamlit_autorefresh import st_autorefresh
+from datetime import datetime
 
 # Set Streamlit page config
 def set_page_config():
@@ -20,12 +19,12 @@ set_page_config()
 
 st.title("SG Today's Sentiment")
 st.markdown("""
-This app visualizes the latest sentiment of Singapore news articles on an interactive map. The data is automatically refreshed every 8 hours, and you can view the most recent sentiment analysis results directly on the map below.
+This app visualizes the latest sentiment of Singapore news articles on an interactive map. The data is automatically refreshed every time you open or refresh the app, and you can view the most recent sentiment analysis results directly on the map below.
 
 **How to use this app:**
 - The map below shows the latest sentiment analysis of Singapore news articles.
 - Click on the emoji on the map to view the news details.
-- The data and map refresh automatically every 8 hours; you do not need to reload the page.
+- The data and map refresh every time you open or refresh the page.
 - When the data is being updated, a progress bar and log output will be shown.
 - Once the update is complete, the map will be displayed in wide screen.
 """)
@@ -43,7 +42,6 @@ st.markdown(
 LOG_FILE = "pipeline_log.txt"
 MAP_FILE = "singapore_news_sentiment_map.html"
 PIPELINE_SCRIPT = "run_pipeline.py"
-INTERVAL_HOURS = 8
 
 # Function to run pipeline and capture output
 def run_pipeline_with_progress():
@@ -78,27 +76,9 @@ def show_map():
         st.error(f"Map file {MAP_FILE} not found.")
 
 def main():
-    now = datetime.now()
-    if "last_run" not in st.session_state:
-        st.session_state.last_run = None
-    if "next_run" not in st.session_state:
-        st.session_state.next_run = now
-    # Auto-refresh every 1 minute
-    st_autorefresh(interval=60 * 1000, key="datarefresh")
-    # If it's time to run the pipeline
-    if st.session_state.last_run is None or now >= st.session_state.next_run:
-        st.info("Updating data, please wait...")
-        run_pipeline_with_progress()
-        st.session_state.last_run = now
-        st.session_state.next_run = now + timedelta(hours=INTERVAL_HOURS)
-        st.rerun()
-    else:
-        # Show countdown to next run
-        seconds_left = int((st.session_state.next_run - now).total_seconds())
-        hours, remainder = divmod(seconds_left, 3600)
-        minutes, seconds = divmod(remainder, 60)
-        st.success(f"Next data update in {hours:02d}:{minutes:02d}:{seconds:02d}")
-        show_map()
+    st.info("Updating data, please wait...")
+    run_pipeline_with_progress()
+    show_map()
 
 if __name__ == "__main__":
     main()
