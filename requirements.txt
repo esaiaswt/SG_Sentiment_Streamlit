@@ -9,3 +9,4 @@ webdriver-manager
 pyyaml
 branca
 python-dotenv
+streamlit_autorefresh

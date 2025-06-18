@@ -4,6 +4,7 @@ import time
 import os
 from streamlit.components.v1 import html
 from datetime import datetime, timedelta
+from streamlit_autorefresh import st_autorefresh
 
 # Set Streamlit page config
 def set_page_config():
@@ -82,6 +83,8 @@ def main():
         st.session_state.last_run = None
     if "next_run" not in st.session_state:
         st.session_state.next_run = now
+    # Auto-refresh every 1 minute
+    st_autorefresh(interval=60 * 1000, key="datarefresh")
     # If it's time to run the pipeline
     if st.session_state.last_run is None or now >= st.session_state.next_run:
         st.info("Updating data, please wait...")
@@ -96,8 +99,6 @@ def main():
         minutes, seconds = divmod(remainder, 60)
         st.success(f"Next data update in {hours:02d}:{minutes:02d}:{seconds:02d}")
         show_map()
-        # Auto-refresh every minute to update countdown
-        st.experimental_rerun() if seconds_left <= 60 else None
 
 if __name__ == "__main__":
     main()
