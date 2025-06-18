@@ -873,5 +873,432 @@
     "reason": "The news article reports a statement from a 72-year-old man regarding an interaction with Gan Siow Huang.  There's no indication of positive or negative sentiment beyond a factual recounting of the event.",
     "emoji": "😐",
     "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/housing/3-in-4-consumers-want-property-agents-to-stay-updated-by-closing-at-least-one-deal-a-year-survey": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The survey results simply state consumer preferences regarding property agents;  no positive or negative judgment is implied.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/brothers-fined-after-driving-car-into-oncoming-traffic-swopping-seats-to-cover-up": {
+    "place": "Singapore (Unspecified location - incident could have occurred anywhere in Singapore)",
+    "sentiment": "negative",
+    "reason": "Two brothers committed a traffic violation and then attempted to cover it up by lying to the police. This is a negative act.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/man-allegedly-linked-to-international-scam-syndicate-faces-6-charges-including-cheating": {
+    "place": "Singapore Police Force (Specific location unavailable from text)",
+    "sentiment": "negative",
+    "reason": "A man is facing multiple charges, including cheating, suggesting criminal activity and negative consequences.",
+    "emoji": "😠",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/consumer/retail-competition-aims-to-rejuvenate-mall-scene-by-offering-free-rent-financial-support": {
+    "place": "Singapore (general)",
+    "sentiment": "positive",
+    "reason": "The initiative aims to improve the retail scene in Singapore by offering incentives to local brands.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/politics/wp-co-opts-four-rookie-mps-into-cec-ncmp-eileen-chong-to-head-youth-wing": {
+    "place": "Workers' Party Headquarters, Singapore",
+    "sentiment": "neutral",
+    "reason": "The news reports a restructuring within the Workers' Party, a Singaporean political party.  It's neither positive nor negative in itself; it's simply a factual update.",
+    "emoji": "ℹ️",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/from-reluctant-volunteer-to-cca-leader-temasek-poly-grad-finds-purpose-beyond-classroom": {
+    "place": "Temasek Polytechnic",
+    "sentiment": "positive",
+    "reason": "The article highlights a positive achievement of a student at a Singaporean polytechnic, showcasing their dedication and contribution.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/insurer-great-eastern-pauses-pre-authorisation-certificates-for-mount-elizabeth-admissions": {
+    "place": "Mount Elizabeth Hospital",
+    "sentiment": "negative",
+    "reason": "Great Eastern's pause on pre-authorisation certificates for Mount Elizabeth admissions suggests a negative impact on patients who may face higher costs or difficulties accessing healthcare.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/prominent-signs-in-chestnut-nature-park-warn-riders-and-hikers-of-live-firing-areas": {
+    "place": "Chestnut Nature Park, Singapore",
+    "sentiment": "negative",
+    "reason": "People are ignoring warning signs about live-firing areas, posing a safety risk.",
+    "emoji": "⚠️",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/8-year-old-girl-among-3-people-injured-after-accident-in-boon-lay": {
+    "place": "Boon Lay",
+    "sentiment": "negative",
+    "reason": "Three people, including an 8-year-old, were injured in a traffic accident.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/st-explains-what-is-a-gazetted-area-and-how-do-i-avoid-accidentally-entering-one": {
+    "place": "Singapore (general location, specific location not provided in article)",
+    "sentiment": "negative",
+    "reason": "A person was injured by a bullet in a restricted military area.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/three-men-arrested-over-evasion-of-more-than-800000-in-cigarette-duties-and-taxes": {
+    "place": "Gul Drive, Singapore",
+    "sentiment": "negative",
+    "reason": "Three men were arrested for evading over $800,000 in cigarette duties and taxes, indicating illegal activity and a loss of revenue for Singapore.",
+    "emoji": "😠",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/2-months-jail-for-former-peoples-association-employee-who-misappropriated-over-8k": {
+    "place": "People's Association (Specific location would require more information)",
+    "sentiment": "negative",
+    "reason": "A former employee of a Singaporean organization was jailed for misappropriating funds.",
+    "emoji": "😠",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/environment/things-are-bad-but-dont-lose-hope-a-singapore-climate-scientists-view-of-the-world": {
+    "place": "National University of Singapore (NUS) or similar research institution",
+    "sentiment": "negative",
+    "reason": "The article highlights worsening climate impacts and increasing costs, expressing concern about humanity's ability to address the climate crisis effectively.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/politics/trust-in-news-in-singapore-higher-than-global-average-st-is-most-trusted-news-brand-report": {
+    "place": "Singapore (general)",
+    "sentiment": "positive",
+    "reason": "The article reports high levels of trust in The Straits Times (ST) in Singapore, exceeding the global average.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/man-dies-after-car-skids-crashes-into-tree-in-paya-lebar-road": {
+    "place": "Paya Lebar Road, Singapore (near Tan Tock Seng Hospital)",
+    "sentiment": "negative",
+    "reason": "A man died in a car accident.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/jail-for-tutor-who-committed-lewd-acts-while-standing-behind-his-students": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/transport/8-drivers-nabbed-for-providing-illegal-rides-to-buddha-tooth-relic-temple-gardens-by-the-bay": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/singapore-private-club-1880-suddenly-closes-founder-says-no-funds-to-pay-staff-and-suppliers": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/man-charged-over-stabbing-at-void-deck-in-yishun": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/ex-preschool-teacher-admits-to-tripping-toddler-repeatedly-causing-nose-bleed-on-one-occasion": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/foreigner-nabbed-at-woodlands-checkpoint-after-heroin-cannabis-found-in-car": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/former-car-salesman-jailed-for-cheating-2-customers-of-over-341k-in-total": {
+    "place": "Singapore Courts (general location, as the specific court isn't mentioned)",
+    "sentiment": "negative",
+    "reason": "A car salesman was jailed for cheating customers, highlighting a crime and loss of money.",
+    "emoji": "😠",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/transport/from-civil-service-to-cabinet-jeffrey-siow-embraces-the-challenge-of-singapores-transport-system": {
+    "place": "Singapore Land Transport Authority (LTA)",
+    "sentiment": "positive",
+    "reason": "The Acting Minister aims to improve Singapore's transport systems and restore public pride and love for them.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/transport/acting-transport-minister-jeffrey-siow-on-coe-system-private-hire-cars-and-other-transport-issues": {
+    "place": "Singapore Land Transport Authority (LTA)",
+    "sentiment": "neutral",
+    "reason": "The news reports on a transport policy update without expressing positive or negative opinions.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/transport/singapore-aims-to-ramp-up-autonomous-vehicle-use-to-boost-public-transport-network": {
+    "place": "Land Transport Authority (LTA) Singapore",
+    "sentiment": "positive",
+    "reason": "The initiative aims to improve public transport, suggesting progress and positive development for Singapore.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/how-ntu-bus-guy-went-from-the-shy-kid-to-vlogger-and-emcee": {
+    "place": "Nanyang Technological University (NTU)",
+    "sentiment": "positive",
+    "reason": "The article highlights a student's positive achievement and rise to online popularity.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/saf-industrial-engineer-develop-smarter-warfare-tech-mindef-scholarship-centre": {
+    "place": "Ministry of Defence, Singapore",
+    "sentiment": "neutral",
+    "reason": "The article is factual and informative about military technology development in Singapore.  It doesn't express a positive or negative opinion.",
+    "emoji": "ℹ️",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/want-a-deep-dive-into-the-news-the-straits-times-has-got-you-covered": {
+    "place": "The Straits Times Headquarters",
+    "sentiment": "positive",
+    "reason": "Promoting a Singaporean news publication suggests a positive view towards local journalism and information access.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/van-driver-who-went-at-132kmh-among-motorists-to-be-charged-with-speeding": {
+    "place": "Singapore (general location, no specific place can be determined from the text)",
+    "sentiment": "negative",
+    "reason": "The news reports on a speeding incident and highlights the dangers of speeding, contributing to fatal crashes.",
+    "emoji": "⚠️",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/beware-of-scammers-pretending-to-be-moh-officers-ministry": {
+    "place": "Ministry of Health (MOH), Singapore",
+    "sentiment": "negative",
+    "reason": "The news reports on scammers impersonating MOH officers, causing potential harm and financial loss to victims.",
+    "emoji": "⚠️",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/6-taken-to-hospital-2-injured-after-lorry-skidded-in-tuas": {
+    "place": "Tuas, Singapore",
+    "sentiment": "negative",
+    "reason": "A road accident resulted in injuries and hospitalizations.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/increasing-careshield-life-payouts-lowering-qualifying-criteria-among-charitys-recommendations": {
+    "place": "Ministry of Health, Singapore",
+    "sentiment": "neutral",
+    "reason": "The article reports on a review of the CareShield Life scheme, which is a Singaporean government initiative.  It doesn't express positive or negative opinions on the review itself, only stating the timeline for the outcome.",
+    "emoji": "🤔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/politics/indonesia-will-copy-singapores-successful-policies-with-pride-says-president-prabowo": {
+    "place": "Singapore (general)",
+    "sentiment": "positive",
+    "reason": "Indonesia's president expresses admiration for Singapore's policies and success, indicating a positive sentiment towards Singapore.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/jail-for-company-director-after-his-firms-bank-account-received-over-2m-in-crime-proceeds": {
+    "place": "Singapore (Specific location not mentioned in the article)",
+    "sentiment": "negative",
+    "reason": "A company director was jailed for his firm receiving over $2 million in crime proceeds.",
+    "emoji": "😠",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/warm-humid-nights-to-continue-till-end-june-expect-thundery-showers-in-the-day-too": {
+    "place": "Singapore (general)",
+    "sentiment": "neutral",
+    "reason": "The news report simply states weather conditions, not expressing any positive or negative judgment.",
+    "emoji": "☁️",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/housing/no-new-condo-launches-cautious-buyers-send-may-new-private-home-sales-skidding": {
+    "place": "Singapore (general)",
+    "sentiment": "negative",
+    "reason": "New private home sales in May decreased due to a lack of new condo launches and cautious buyers.",
+    "emoji": "📉",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/jail-fine-for-2-women-caught-stealing-at-changi-airport-while-in-transit-to-bali": {
+    "place": "Changi Airport",
+    "sentiment": "negative",
+    "reason": "Two women were caught stealing at Changi Airport, resulting in one being jailed and the other fined.",
+    "emoji": "😡",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/civil-servants-to-get-0-4-month-mid-year-bonus": {
+    "place": "Singapore (Government Offices)",
+    "sentiment": "positive",
+    "reason": "Civil servants receiving a mid-year bonus indicates positive economic performance and employee appreciation.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/man-shot-in-forested-area-near-central-catchment-nature-reserve": {
+    "place": "Central Catchment Nature Reserve",
+    "sentiment": "negative",
+    "reason": "A man was injured by a stray bullet near a military exercise.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/34-months-jail-for-ex-cop-over-36k-in-bribes-earlier-sentenced-in-2024-for-another-graft-case": {
+    "place": "Singapore Prison (general location, specific prison not specified)",
+    "sentiment": "negative",
+    "reason": "The news reports a jail sentence for corruption.",
+    "emoji": "😠",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/singapore-and-indonesia-will-blaze-a-path-forward-for-the-rest-of-asean-tharman": {
+    "place": "Istana (Singapore Presidential Palace)",
+    "sentiment": "positive",
+    "reason": "The news highlights a strong and enhanced cooperation between Singapore and Indonesia, signifying a positive development for both nations.",
+    "emoji": "🤝",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/founders-memorial-sg60-first-generation-david-neo-5188706": {
+    "place": "Founders' Memorial, Bay East Garden",
+    "sentiment": "positive",
+    "reason": "The project highlights the contributions of Singapore's senior citizens and fosters community engagement in the creation of a national memorial.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/business/indonesia-central-bank-keeps-rates-steady-expected-5189146": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The news reports a predictable event (interest rate remaining unchanged) in Indonesia, which doesn't directly impact Singapore.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/business/airasia-owner-capital-seeks-a321xlr-and-regional-jets-post-restructuring-ceo-says-5189131": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The news reports on AirAsia's plans for aircraft acquisition after restructuring.  There is no explicit positive or negative sentiment expressed.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/world/israel-iran-war-trump-united-states-involvement-analysts-5189051": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "The news reports on an ongoing conflict with potential for escalation, indicating a negative situation.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/business/honda-recall-over-259000-us-vehicles-over-brake-pedal-issue-nhtsa-says-5189096": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "A large-scale vehicle recall due to a safety issue (brake pedal problem) is generally considered negative news.",
+    "emoji": "⚠️",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/entertainment/nicholas-galitzine-he-man-adam-masters-universe-5188586": {
+    "place": null,
+    "sentiment": "positive",
+    "reason": "The actor expresses pride and honor in his role.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/business/australias-woodside-energy-signs-15-year-lng-supply-deal-malaysias-petronas-5189076": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The news article reports a business deal between Australian and Malaysian companies.  It has no direct relevance to Singapore.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/entertainment/machine-gun-kelly-reveals-name-daughter-megan-fox-5188626": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The news is a simple announcement of a baby's name, neither positive nor negative.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/business/bok-chief-says-he-not-against-won-based-stablecoins-has-forex-concerns-5189071": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The news article discusses the Bank of Korea's stance on won-based stablecoins, which is a neutral topic without direct implications for Singapore.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/economists-downgrade-singapore-growth-forecast-mas-survey-5188791": {
+    "place": "Monetary Authority of Singapore (MAS)",
+    "sentiment": "negative",
+    "reason": "Economists have lowered their growth forecast for Singapore, indicating a less optimistic economic outlook.",
+    "emoji": "📉",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/entertainment/sean-lau-kit-chan-star-awards-2025-5188871": {
+    "place": "Star Awards Venue (Specific location to be determined based on the actual venue for 2025)",
+    "sentiment": "positive",
+    "reason": "The article announces a significant event in Singapore's entertainment industry, featuring notable personalities.",
+    "emoji": "🎉",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/sport/bumrah-told-bcci-he-did-not-want-test-captaincy-due-workload-concerns-5189056": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The news article reports a fact about an Indian cricketer's decision.  It doesn't express positive or negative opinions.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/92-singapore-consumers-satisfied-service-property-agents-cea-survey-5188806": {
+    "place": "Council for Estate Agencies (CEA) Headquarters, Singapore",
+    "sentiment": "positive",
+    "reason": "High consumer satisfaction rate (92%) with property agents' services indicates positive performance of the industry.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/asia/india-narendra-modi-maintains-no-us-donald-trump-mediation-ceasefire-pakistan-5189001": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The news article reports a statement by Indian Prime Minister Modi regarding US involvement in a ceasefire with Pakistan.  It doesn't contain any information related to Singapore or express any positive or negative sentiment towards Singapore.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/entertainment/radio-dj-jean-danker-dating-divorce-glenn-ong-younger-men-5188736": {
+    "place": "Singapore (general)",
+    "sentiment": "neutral",
+    "reason": "The article is about a Singaporean radio DJ's personal life and dating preferences. It doesn't express strong positive or negative emotions.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/asia/indonesia-police-arrest-three-australian-men-shooting-bali-5188986": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Three Australian men were arrested for a shooting in Bali, indicating a negative event involving violence and crime.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/business/bojs-inflation-warning-leaves-room-another-rate-hike-year-5188981": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "The Bank of Japan's (BOJ) inflation warning suggests potential economic instability and the possibility of another interest rate hike, which is generally viewed negatively by markets and consumers.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/boy-17-accused-deceiving-ex-schoolmate-degrading-acts-such-drinking-own-urine-5188821": {
+    "place": "Singapore (general location - cannot pinpoint a specific place based on the information)",
+    "sentiment": "negative",
+    "reason": "A 17-year-old boy is accused of serious crimes involving deception and degrading acts against a former schoolmate.",
+    "emoji": "😠",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/sport/williams-back-crusaders-chiefs-unchanged-super-rugby-final-5188971": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The news article is about a rugby match and doesn't contain any information related to Singapore or any Singaporean entity.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/east-asia/taiwan-starts-sea-tests-first-domestically-built-submarine-5188886": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The news article reports on a Taiwanese development and doesn't have a direct impact or relation to Singapore.",
+    "emoji": "😐",
+    "is_sg_related": true
   }
 }
