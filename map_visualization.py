@@ -75,7 +75,8 @@ def gemini_analyze_article(api_key, title, content, idx=None, total=None):
     import requests
     import time
     import re
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" + api_key
+    # Use Gemini 2.0 Flash endpoint instead of 1.5
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-latest:generateContent?key=" + api_key
     prompt = f"""
     Given the following news article, answer in JSON with these fields:
     - is_sg_related: true if the article is about Singapore, false otherwise
