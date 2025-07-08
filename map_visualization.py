@@ -72,13 +72,12 @@ def gemini_analyze_article(api_key, title, content, idx=None, total=None):
     Use Google Gemini 2.0 Flash to get best place in Singapore for marker and sentiment analysis.
     Returns (place_name, sentiment, reason, emoji, is_sg_related)
     """
-    import requests
+    import google.generativeai as genai
     import time
     import re
-    # Use Gemini 2.0 Flash endpoint instead of 1.5
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-latest:generateContent?key=" + api_key
+    genai.configure(api_key=api_key)
     prompt = f"""
-    Given the following news article, answer in JSON with these fields:
+    Given the following news article, respond ONLY with a valid JSON object with these fields (no explanation, no markdown, no extra text):\n
     - is_sg_related: true if the article is about Singapore, false otherwise
     - place: The best Singapore place/building/office to put a map marker for this article (be specific, e.g. 'Changi Airport', 'Orchard Towers', 'Google Asia Pacific', etc.)
     - sentiment: positive, negative, or neutral
@@ -87,75 +86,110 @@ def gemini_analyze_article(api_key, title, content, idx=None, total=None):
     News title: {title}
     News content: {content}
     """
-    data = {
-        "contents": [{"parts": [{"text": prompt}]}]
-    }
-    headers = {"Content-Type": "application/json"}
+    model = genai.GenerativeModel('gemini-2.0-flash')  # Use Gemini Pro for best compatibility
+    # --- Emoji mapping: map common text/labels to Unicode emoji ---
+    def map_to_emoji(emoji_value):
+        if not emoji_value:
+            return None
+        # If it's already a single emoji, return as is
+        import re
+        emoji_pattern = re.compile(
+            r"[\U0001F600-\U0001F64F"  # emoticons
+            r"\U0001F300-\U0001F5FF"  # symbols & pictographs
+            r"\U0001F680-\U0001F6FF"  # transport & map symbols
+            r"\U0001F1E0-\U0001F1FF"  # flags (iOS)
+            r"\U00002700-\U000027BF"  # Dingbats
+            r"\U0001F900-\U0001F9FF"  # Supplemental Symbols and Pictographs
+            r"\U00002600-\U000026FF"  # Misc symbols
+            r"\U0001FA70-\U0001FAFF"  # Symbols and Pictographs Extended-A
+            r"]+", flags=re.UNICODE)
+        if emoji_pattern.fullmatch(str(emoji_value).strip()):
+            return emoji_value.strip()
+        # Common mappings
+        mapping = {
+            'happy': '😊', 'smile': '😊', 'smiling': '😊', 'positive': '😊', 'joy': '😊', 'good': '😊',
+            'sad': '😞', 'frown': '😞', 'negative': '😞', 'unhappy': '😞', 'cry': '😢', 'angry': '😠',
+            'neutral': '😐', 'meh': '😐', 'ok': '😐', 'indifferent': '😐', 'traffic light': '🚦',
+            'warning': '⚠️', 'alert': '⚠️', 'danger': '🚨', 'fire': '🔥', 'money': '💰', 'love': '❤️',
+            'hospital': '🏥', 'police': '👮', 'school': '🏫', 'rain': '🌧️', 'sun': '☀️', 'cloud': '☁️',
+            'storm': '🌩️', 'flood': '🌊', 'accident': '💥', 'virus': '🦠', 'health': '🩺', 'crime': '🚔',
+            'protest': '✊', 'celebration': '🎉', 'party': '🥳', 'confused': '😕', 'shocked': '😲',
+            'surprised': '😮', 'disappointed': '😞', 'success': '🏆', 'failure': '❌', 'question': '❓',
+            'exclamation': '❗', 'star': '⭐', 'earth': '🌏', 'singapore': '🦁', 'lion': '🦁',
+            'government': '🏛️', 'airport': '🛫', 'train': '🚆', 'bus': '🚌', 'car': '🚗', 'plane': '✈️',
+            'food': '🍲', 'restaurant': '🍽️', 'shopping': '🛍️', 'market': '🛒', 'sports': '🏟️',
+            'music': '🎵', 'art': '🎨', 'technology': '💻', 'science': '🔬', 'education': '🎓',
+            'environment': '🌳', 'nature': '🌿', 'energy': '⚡', 'water': '💧', 'fireworks': '🎆',
+            'award': '🏅', 'medal': '🏅', 'trophy': '🏆', 'winner': '🏆', 'loser': '😞',
+        }
+        val = str(emoji_value).strip().lower()
+        # Try direct mapping
+        if val in mapping:
+            return mapping[val]
+        # Try to extract emoji from text (e.g. "neutral face (😐)")
+        match = re.search(r'[\U0001F600-\U0001FAFF\u2600-\u27BF]', emoji_value)
+        if match:
+            return match.group(0)
+        # Try to map by keywords in the value
+        for k, v in mapping.items():
+            if k in val:
+                return v
+        # Fallback: neutral face
+        return '😐'
+
     for attempt in range(2):  # Try at most twice
         try:
-            resp = requests.post(url, json=data, headers=headers, timeout=30)
-            if resp.status_code == 429:
-                try:
-                    err = resp.json()
-                    retry_delay = 60  # default fallback
-                    details = err.get('error', {}).get('details', [])
-                    for d in details:
-                        if d.get('@type', '').endswith('RetryInfo'):
-                            delay_str = d.get('retryDelay', '60s')
-                            match = re.match(r'(\d+)([sm]?)', delay_str)
-                            if match:
-                                val, unit = match.groups()
-                                val = int(val)
-                                if unit == 'm':
-                                    retry_delay = val * 60
-                                else:
-                                    retry_delay = val
-                    if idx is not None and total is not None:
-                        print(f"Processing article {idx} of {total} before Gemini API rate limit hit.")
-                    print(f"Gemini API rate limit hit. Sleeping for {retry_delay} seconds before retrying...")
-                    time.sleep(retry_delay)
-                    continue  # retry after sleep
-                except Exception as e:
-                    print(f"Error parsing retryDelay from Gemini 429: {e}")
-                    return None, None, None, None, None
-            if resp.status_code != 200:
-                print(f"Gemini API HTTP error {resp.status_code}: {resp.text}")
-                return None, None, None, None, None
-            result = resp.json()
+            response = model.generate_content(prompt)
             # Print Gemini token usage if available
-            usage = result.get('usageMetadata', {})
-            in_tokens = usage.get('promptTokenCount')
-            out_tokens = usage.get('candidatesTokenCount')
-            if in_tokens is not None:
-                GEMINI_TOTAL_IN_TOKENS += in_tokens
-            if out_tokens is not None:
-                GEMINI_TOTAL_OUT_TOKENS += out_tokens
-            if in_tokens is not None or out_tokens is not None:
+            usage = getattr(response, 'usage_metadata', None)
+            if usage:
+                in_tokens = usage.prompt_token_count
+                out_tokens = usage.candidates_token_count
+                if in_tokens is not None:
+                    GEMINI_TOTAL_IN_TOKENS += in_tokens
+                if out_tokens is not None:
+                    GEMINI_TOTAL_OUT_TOKENS += out_tokens
                 print(f"Gemini tokens used: in={in_tokens}, out={out_tokens}, total in={GEMINI_TOTAL_IN_TOKENS}, total out={GEMINI_TOTAL_OUT_TOKENS}")
-            if not result or 'candidates' not in result or not result['candidates']:
-                print(f"Gemini API error: No candidates in response: {result}")
-                return None, None, None, None, None
-            text = result['candidates'][0]['content']['parts'][0].get('text', '')
+            text = response.text if hasattr(response, 'text') else str(response)
             if not text:
-                print(f"Gemini API error: No text in response: {result}")
-                return None, None, None, None, None
-            # --- Clean Markdown code block if present ---
+                print(f"Gemini API error: No text in response: {response}")
+                continue
+            # --- Try to extract JSON object from the response, even with extra text ---
             text_clean = text.strip()
+            # Remove Markdown code block if present
             if text_clean.startswith('```'):
-                # Remove triple backticks and optional language tag
                 text_clean = re.sub(r'^```[a-zA-Z]*\n?', '', text_clean)
                 text_clean = re.sub(r'```$', '', text_clean).strip()
             import json as pyjson
             try:
+                # Try direct parse
                 parsed = pyjson.loads(text_clean)
-                return parsed.get('place'), parsed.get('sentiment'), parsed.get('reason'), parsed.get('emoji'), parsed.get('is_sg_related')
+                emoji_fixed = map_to_emoji(parsed.get('emoji'))
+                return parsed.get('place'), parsed.get('sentiment'), parsed.get('reason'), emoji_fixed, parsed.get('is_sg_related')
             except Exception as e:
+                # Try to extract JSON object from within extra text
+                import re as _re
+                match = _re.search(r'\{[\s\S]*\}', text_clean)
+                if match:
+                    json_str = match.group(0)
+                    # Fix common Gemini mistakes: unquoted values, bad unicode, etc.
+                    # 1. Add quotes around unquoted neutral/positive/negative
+                    json_str = _re.sub(r'("sentiment"\s*:\s*)(neutral|positive|negative)([\s,}])', r'\1"\2"\3', json_str)
+                    # 2. Fix bad unicode (replace \u-style escapes and invalid chars)
+                    json_str = json_str.encode('utf-8', 'replace').decode('utf-8', 'replace')
+                    try:
+                        parsed = pyjson.loads(json_str)
+                        emoji_fixed = map_to_emoji(parsed.get('emoji'))
+                        return parsed.get('place'), parsed.get('sentiment'), parsed.get('reason'), emoji_fixed, parsed.get('is_sg_related')
+                    except Exception as e2:
+                        print(f"Gemini API JSON extract error: {e2}\nRaw text: {text}")
                 print(f"Gemini API JSON parse error: {e}\nRaw text: {text}")
-                return None, None, None, None, None
+                continue
         except Exception as e:
             print(f"Gemini API request error: {e}")
-            return None, None, None, None, None
-    print("Gemini API: Exceeded retry attempts after rate limit.")
+            time.sleep(2)
+            continue
+    print("Gemini API: Exceeded retry attempts after rate limit or errors.")
     return None, None, None, None, None
 
 def is_in_singapore(lat, lon):
@@ -163,6 +197,49 @@ def is_in_singapore(lat, lon):
     return 1.130 <= lat <= 1.480 and 103.6 <= lon <= 104.1
 
 def plot_emojis_on_map(articles_with_sentiment):
+    # --- Emoji mapping: map common text/labels to Unicode emoji ---
+    def map_to_emoji(emoji_value):
+        if not emoji_value:
+            return None
+        import re
+        emoji_pattern = re.compile(
+            r"[\U0001F600-\U0001F64F"  # emoticons
+            r"\U0001F300-\U0001F5FF"  # symbols & pictographs
+            r"\U0001F680-\U0001F6FF"  # transport & map symbols
+            r"\U0001F1E0-\U0001F1FF"  # flags (iOS)
+            r"\U00002700-\U000027BF"  # Dingbats
+            r"\U0001F900-\U0001F9FF"  # Supplemental Symbols and Pictographs
+            r"\U00002600-\U000026FF"  # Misc symbols
+            r"\U0001FA70-\U0001FAFF"  # Symbols and Pictographs Extended-A
+            r"]+", flags=re.UNICODE)
+        if emoji_pattern.fullmatch(str(emoji_value).strip()):
+            return emoji_value.strip()
+        mapping = {
+            'happy': '😊', 'smile': '😊', 'smiling': '😊', 'positive': '😊', 'joy': '😊', 'good': '😊',
+            'sad': '😞', 'frown': '😞', 'negative': '😞', 'unhappy': '😞', 'cry': '😢', 'angry': '😠',
+            'neutral': '😐', 'meh': '😐', 'ok': '😐', 'indifferent': '😐', 'traffic light': '🚦',
+            'warning': '⚠️', 'alert': '⚠️', 'danger': '🚨', 'fire': '🔥', 'money': '💰', 'love': '❤️',
+            'hospital': '🏥', 'police': '👮', 'school': '🏫', 'rain': '🌧️', 'sun': '☀️', 'cloud': '☁️',
+            'storm': '🌩️', 'flood': '🌊', 'accident': '💥', 'virus': '🦠', 'health': '🩺', 'crime': '🚔',
+            'protest': '✊', 'celebration': '🎉', 'party': '🥳', 'confused': '😕', 'shocked': '😲',
+            'surprised': '😮', 'disappointed': '😞', 'success': '🏆', 'failure': '❌', 'question': '❓',
+            'exclamation': '❗', 'star': '⭐', 'earth': '🌏', 'singapore': '🦁', 'lion': '🦁',
+            'government': '🏛️', 'airport': '🛫', 'train': '🚆', 'bus': '🚌', 'car': '🚗', 'plane': '✈️',
+            'food': '🍲', 'restaurant': '🍽️', 'shopping': '🛍️', 'market': '🛒', 'sports': '🏟️',
+            'music': '🎵', 'art': '🎨', 'technology': '💻', 'science': '🔬', 'education': '🎓',
+            'environment': '🌳', 'nature': '🌿', 'energy': '⚡', 'water': '💧', 'fireworks': '🎆',
+            'award': '🏅', 'medal': '🏅', 'trophy': '🏆', 'winner': '🏆', 'loser': '😞',
+        }
+        val = str(emoji_value).strip().lower()
+        if val in mapping:
+            return mapping[val]
+        match = re.search(r'[\U0001F600-\U0001FAFF\u2600-\u27BF]', emoji_value)
+        if match:
+            return match.group(0)
+        for k, v in mapping.items():
+            if k in val:
+                return v
+        return '😐'
     api_key = load_gemini_api_key()
     overall_coords = [1.285, 103.905]  # Approx. sea below Marine Parade
     sg_coords = [1.3521, 103.8198]
@@ -188,13 +265,27 @@ def plot_emojis_on_map(articles_with_sentiment):
         place_name = article.get('place')
         sentiment = article.get('sentiment')
         reason = article.get('reason')
-        emoji = article.get('emoji')
+        emoji = map_to_emoji(article.get('emoji'))
         is_sg_related = article.get('is_sg_related')
         if is_sg_related is not True:
             print(f"  Skipping non-Singapore related article: {title}")
             continue
-        if not place_name or not sentiment or not emoji:
-            print(f"  Gemini result missing for: {title}")
+        missing_fields = []
+        if not place_name:
+            missing_fields.append('place')
+        if not sentiment:
+            missing_fields.append('sentiment')
+        if not emoji:
+            missing_fields.append('emoji')
+        if missing_fields:
+            print(f"  Gemini result missing fields {missing_fields} for: {title}")
+            # Optionally log the problematic article for debugging
+            try:
+                with open('gemini_missing_results.log', 'a', encoding='utf-8') as logf:
+                    import json as _json
+                    logf.write(_json.dumps({'title': title, 'missing_fields': missing_fields, 'article': article}, ensure_ascii=False) + '\n')
+            except Exception as log_exc:
+                print(f"    (Could not log missing Gemini result: {log_exc})")
             continue
         # Geocode the place_name
         coord = get_sg_location_coords(place_name)
@@ -265,12 +356,17 @@ def plot_emojis_on_map(articles_with_sentiment):
         now = datetime.now(pytz.timezone('Asia/Singapore'))
         last_updated = now.strftime('%d-%m-%Y %I:%M:%S %p')
         last_updated_html = f'<div style="font-size:11px;color:#555;margin-top:4px;">Last updated: {last_updated}</div>'
+        # Format last updated date in DD-MM-YYYY and style it below "Overview"
+        last_updated_ddmmyyyy = now.strftime('%d-%m-%Y')
         folium.Marker(
             location=overall_coords,
             popup=folium.Popup(f"<b>Overall Singapore Sentiment</b><br>{overall.title()} {overall_emoji}{table_html}{last_updated_html}", max_width=400),
             icon=folium.DivIcon(html=f"""
-                <div style='font-size:40px; line-height:40px; text-align:center; background: white; border: 2px solid #0000FF; border-radius: 8px; width: 200px; height: 56px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 8px #0003; font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', 'Twemoji Mozilla', 'Arial';'>
-                    {overall_emoji}<span style='font-size:24px; font-weight:bold; color:#111; margin-left:10px;'>Overview</span>
+                <div style='font-size:40px; line-height:40px; text-align:center; background: white; border: 2px solid #0000FF; border-radius: 12px; width: 260px; height: 110px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 0 8px #0003; font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', 'Twemoji Mozilla', 'Arial';'>
+                    <div style='display: flex; align-items: center; justify-content: center; margin-top: 8px;'>
+                        {overall_emoji}<span style='font-size:28px; font-weight:bold; color:#111; margin-left:14px;'>Overview</span>
+                    </div>
+                    <div style='font-size:20px; color:#333; margin-top:8px; font-weight:normal;'>{last_updated_ddmmyyyy}</div>
                 </div>
             """.strip())
         ).add_to(m)

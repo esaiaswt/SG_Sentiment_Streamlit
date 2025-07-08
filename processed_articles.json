@@ -1,0 +1,1591 @@
+{
+  "https://www.straitstimes.com/singapore/tourism-bump-from-lady-gaga-concerts-raked-in-up-to-estimated-150m-for-singapore-economy": {
+    "place": "National Stadium",
+    "sentiment": "positive",
+    "reason": "Tourism boost and economic benefit.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/2-teens-posed-as-minors-on-dating-sites-to-lure-paedophiles-and-extort-money-from-them": {
+    "place": "Singapore",
+    "sentiment": "negative",
+    "reason": "The article describes a crime involving extortion and targeting vulnerable individuals.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/sengkang-murder-man-accused-of-killing-elderly-mother-escorted-back-to-crime-scene": {
+    "place": "Sengkang",
+    "sentiment": "negative",
+    "reason": "Reports a murder case.",
+    "emoji": "😞",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/jail-for-man-who-recruited-2-japanese-women-for-prostitution-at-mbs": {
+    "place": "Marina Bay Sands",
+    "sentiment": "negative",
+    "reason": "Involves exploitation and illegal activity.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/multiple-charges-for-man-accused-of-damaging-pap-campaign-materials-on-ge2025-polling-day": {
+    "place": "People's Action Party Headquarters",
+    "sentiment": "negative",
+    "reason": "Campaign materials were damaged.",
+    "emoji": "😠",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/universities-like-nus-need-to-be-open-to-become-a-sanctuary-for-global-talent-vivian-balakrishnan": {
+    "place": "National University of Singapore",
+    "sentiment": "positive",
+    "reason": "Promoting openness and talent is viewed favorably.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/mistakes-interns-make-have-consequences-but-are-also-learning-opportunities": {
+    "place": "Singapore Management University",
+    "sentiment": "neutral",
+    "reason": "The article discusses learning from mistakes, which is a neutral concept in a learning environment.",
+    "emoji": "🤔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/housing/sellers-stamp-duty-rate-for-private-home-owners-raised": {
+    "place": "Singapore",
+    "sentiment": "neutral",
+    "reason": "Reports a change in regulations, neither positive nor negative in tone.",
+    "emoji": "📰",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/beware-of-scammers-requesting-transfer-of-crypto-assets-for-security-investigation-police": {
+    "place": "Singapore Police Force",
+    "sentiment": "negative",
+    "reason": "Reports of scams involving crypto assets indicate a negative trend.",
+    "emoji": "🚨",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/traffic-delays-expected-road-closures-and-bus-diversions-in-place-for-upcoming-ndp-2025-ne-shows": {
+    "place": "Marina Bay",
+    "sentiment": "neutral",
+    "reason": "Informing about traffic delays.",
+    "emoji": " traffic light",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/two-business-leaders-in-advanced-manufacturing-awarded-public-service-star": {
+    "place": "Singapore",
+    "sentiment": "positive",
+    "reason": "Recognition of contributions to Singapore's economy.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/environment/193ha-of-land-off-changi-to-be-reclaimed-for-aviation-park-area-reduced-to-save-seagrass-meadow": {
+    "place": "Changi Airport",
+    "sentiment": "neutral",
+    "reason": "Reports on land reclamation, objective.",
+    "emoji": "📰",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/1-in-4-appeals-to-waive-15-month-wait-out-period-for-private-home-owners-approved-since-sept-2022": {
+    "place": "HDB Hub",
+    "sentiment": "neutral",
+    "reason": "Reports statistics on HDB appeal outcomes.",
+    "emoji": "📊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/baby-spa-dance-lessons-leather-crafting-where-to-use-your-sg60-vouchers-beyond-the-hawker-centre": {
+    "place": "Community Centres",
+    "sentiment": "positive",
+    "reason": "The article promotes the use of vouchers for various activities, suggesting a positive economic impact and offering leisure opportunities.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/housing/healthcare-facility-planned-for-site-of-ang-mo-kio-public-library-after-it-moves-to-amk-hub": {
+    "place": "Ang Mo Kio Public Library",
+    "sentiment": "neutral",
+    "reason": "Relocation of a public facility is a neutral event.",
+    "emoji": "ℹ️",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/ocbc-to-roll-out-smart-text-resizing-in-its-app-in-english-mandarin-to-help-seniors": {
+    "place": "OCBC Centre",
+    "sentiment": "positive",
+    "reason": "Improves accessibility for seniors.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/politics/pap-questions-pritams-interview-with-msian-podcast-says-politics-should-stop-at-waters-edge": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/tanker-crew-member-who-modified-breathing-mask-linked-to-colleagues-death-gets-over-3-months-jail": {
+    "place": "Singapore",
+    "sentiment": "negative",
+    "reason": "A person died due to negligence.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/electrician-who-bit-off-part-of-coworkers-ear-during-fight-gets-6-months-jail": {
+    "place": "Singapore State Courts",
+    "sentiment": "negative",
+    "reason": "A violent crime resulted in a jail sentence.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/scoot-launches-flights-to-da-nang-kota-bharu-and-nha-trang-boosts-frequency-to-other-destinations": {
+    "place": "Changi Airport",
+    "sentiment": "positive",
+    "reason": "Scoot is expanding its flight network, providing more travel options.",
+    "emoji": "✈️",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/man-57-to-be-charged-after-he-allegedly-damaged-pap-campaign-materials-on-ge2025-polling-day": {
+    "place": "People's Action Party Headquarters",
+    "sentiment": "negative",
+    "reason": "Damage to campaign materials indicates negativity.",
+    "emoji": "😠",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/car-services-company-admits-to-posting-ai-generated-reviews-on-sgcarmart": {
+    "place": "Sgcarmart",
+    "sentiment": "negative",
+    "reason": "Misuse of customer data and fake reviews.",
+    "emoji": "😠",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/ng-yu-zhis-bid-for-bail-midway-through-trial-over-1-46b-nickel-scam-denied-by-high-court": {
+    "place": "High Court",
+    "sentiment": "negative",
+    "reason": "Bail denied, flight risk.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/jail-for-sugar-daddy-who-gave-minor-cash-for-sex-threatened-to-post-her-explicit-videos-online": {
+    "place": "Singapore",
+    "sentiment": "negative",
+    "reason": "The article describes exploitation and threats against a minor.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/over-40-of-singaporean-seniors-have-claimed-sg60-vouchers-low-yen-ling": {
+    "place": "Singapore",
+    "sentiment": "positive",
+    "reason": "High claim rate indicates successful program.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/is-using-gen-ai-for-schoolwork-and-tests-cheating": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article poses a question without expressing a strong opinion.",
+    "emoji": "🤔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/500-in-child-lifesg-credits-edusave-post-sec-education-account-top-ups-to-be-disbursed-in-july": {
+    "place": "Ministry of Finance Singapore",
+    "sentiment": "positive",
+    "reason": "Government disbursing credits and top-ups is generally positive for recipients.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/transport/pedestrian-only-path-rules-to-be-enforced-reasonably-focus-on-errant-cyclists-baey-yam-keng": {
+    "place": "Ministry of Transport",
+    "sentiment": "neutral",
+    "reason": "Enforcement of existing rules, no strong positive or negative tone.",
+    "emoji": " neutral",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/17-year-old-teen-charged-with-trespassing-on-mrt-tracks-to-be-remanded-at-imh": {
+    "place": "Upper Changi MRT Station",
+    "sentiment": "negative",
+    "reason": "A teenager trespassed on MRT tracks, which is a safety concern.",
+    "emoji": "⚠️",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/train-service-resumes-across-bukit-panjang-lrt-line-after-power-fault-led-to-3-hour-disruption": {
+    "place": "Bukit Panjang LRT",
+    "sentiment": "negative",
+    "reason": "Train disruption causes inconvenience.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/nus-medicines-target-to-be-the-best-medical-school-in-the-world-for-asia": {
+    "place": "National University of Singapore, Yong Loo Lin School of Medicine",
+    "sentiment": "positive",
+    "reason": "Aims to be top medical school in Asia.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/how-to-deal-with-challenges-and-lack-of-learning-opportunities-during-your-internship": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article offers advice and is not inherently positive or negative.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/teen-17-to-be-charged-for-allegedly-trespassing-on-mrt-tracks": {
+    "place": "MRT tracks",
+    "sentiment": "negative",
+    "reason": "Teenager trespassing on MRT tracks is a safety issue.",
+    "emoji": "🚨",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/from-camping-to-mentorship-singapore-scouts-marks-115th-anniversary-of-the-youth-movement": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/victims-in-singapore-lose-48000-to-food-advertisement-scams-since-mid-june": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/jail-for-ex-dsta-employee-who-shared-confidential-information-with-electrical-firm-manager": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/15-receive-social-service-honours-including-founding-member-of-spores-first-inclusive-pre-school": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/mha-appoints-new-ica-commissioner-cnb-director-as-current-leaders-step-down": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/granddaughter-of-hin-leong-founder-o-k-lim-fails-to-keep-3-insurance-policies-from-creditors-reach": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/at-least-6-7-million-lost-to-government-official-impersonation-scams-in-june": {
+    "place": "Singapore Police Force",
+    "sentiment": "negative",
+    "reason": "Scams resulting in significant financial loss.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/bytedance-food-poisoning-catering-firm-convicted-after-cockroach-infestation-found-on-premises": {
+    "place": "ByteDance Singapore Office",
+    "sentiment": "negative",
+    "reason": "Food poisoning incident due to cockroach infestation and high pathogen levels.",
+    "emoji": "🤢",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/environment/smu-and-4-overseas-universities-join-forces-to-advance-human-focused-urban-research": {
+    "place": "Singapore Management University",
+    "sentiment": "neutral",
+    "reason": "The article is about research collaboration, which is neither inherently positive nor negative.",
+    "emoji": "🤝",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/man-on-trial-for-raping-drunk-woman-after-he-offered-to-drive-her-and-her-friend-home": {
+    "place": "Singapore",
+    "sentiment": "negative",
+    "reason": "The article describes a rape case.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/transport/5300-commuters-shift-travel-patterns-to-avoid-morning-peak-30-opt-to-do-so-post-peak": {
+    "place": "Land Transport Authority (LTA)",
+    "sentiment": "positive",
+    "reason": "Encouraging shift in commuter behaviour to reduce peak hour congestion.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/man-arrested-for-driving-under-influence-after-crashing-rental-car-in-farrer-park": {
+    "place": "Farrer Park",
+    "sentiment": "negative",
+    "reason": "A man was arrested after a car crash.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/health/where-can-caregivers-seek-help-for-mental-health": {
+    "place": "Institute of Mental Health",
+    "sentiment": "neutral",
+    "reason": "Informative article about caregiving.",
+    "emoji": "ℹ️",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/environment/over-5000-pre-schoolers-work-on-sg60-mural-made-of-reused-plastic-toys": {
+    "place": "Promenade MRT station",
+    "sentiment": "positive",
+    "reason": "Artwork promoting reuse of plastic and community involvement.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/politics/singapore-and-cambodia-to-expand-collaboration-in-renewable-energy-carbon-markets-and-agri-trade": {
+    "place": "Ministry of Foreign Affairs (Singapore)",
+    "sentiment": "positive",
+    "reason": "The article describes expanding collaboration, which is generally positive.",
+    "emoji": "🤝",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/3-weeks-jail-for-man-who-touched-himself-on-train-flicked-bodily-fluid-on-female-passenger": {
+    "place": "Singapore MRT",
+    "sentiment": "negative",
+    "reason": "The article describes a sexual assault.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/the-romance-continues-former-singapore-girl-77-returns-to-osaka-expo-after-55-years": {
+    "place": "Singapore Pavilion",
+    "sentiment": "positive",
+    "reason": "A positive story about a Singaporean returning to Osaka Expo after many years.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/dining/casa-vostra-pizza-pasta-new-outlet-jem-5220396": {
+    "place": "Jem",
+    "sentiment": "positive",
+    "reason": "A popular restaurant opening a new outlet is generally positive news.",
+    "emoji": "😃",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/east-asia/china-impose-duties-up-349-eu-brandy-starting-jul-5-5220486": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article discusses trade duties between China and the EU, with no clear positive or negative connotation.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/man-jailed-set-fire-door-grandma-wont-open-gate-5220461": {
+    "place": "HDB Flat",
+    "sentiment": "negative",
+    "reason": "Arson and family conflict",
+    "emoji": "🔥",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/world/russia-first-country-recognise-taliban-government-afghanistan-5220451": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article reports a factual recognition of a government.",
+    "emoji": " neutrallollipop",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/indonesian-woman-jail-sex-work-advertise-5220391": {
+    "place": "Changi Airport",
+    "sentiment": "negative",
+    "reason": "Involves illegal activities and exploitation.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/sport/gladbach-midfielder-neuhaus-suspended-first-team-unacceptable-video-5220446": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/dining/milo-singapore-fun-facts-milo-van-5218496": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/sport/tupou-gets-chance-stake-claim-lions-series-waratahs-5220421": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/east-asia/china-us-lifted-export-curbs-blackmail-framework-trade-talks-5220411": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/entertainment/bollywood-star-deepika-padukone-first-indian-actress-receive-star-hollywood-walk-fame-5220246": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/entertainment/mediacorp-bloomrsg-mcn-accelerator-programme-fifth-edition-5219961": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/entertainment/malaysian-pop-band-kru-yusry-universal-studios-singapore-lost-phone-5220081": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/man-trial-nude-carpark-sengkang-drive-lover-husband-5220206": {
+    "place": "Sengkang Car Park",
+    "sentiment": "negative",
+    "reason": "The article describes a tense and potentially violent encounter.",
+    "emoji": "😟",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/asia/chinese-national-missing-thailand-china-embassy-warn-shady-job-offer-5220321": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article reports on a rescue in Thailand and an embassy warning, with no explicit positive or negative slant.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/property-analysts-limited-impact-sellers-stamp-duty-holding-period-5220046": {
+    "place": "Singapore",
+    "sentiment": "neutral",
+    "reason": "The article discusses the impact of government policy on the property market.",
+    "emoji": "📰",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/world/us-trump-expects-hamas-decision-24-hours-final-peace-proposal-israel-gaza-5220291": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article reports on Trump's statement about a peace proposal decision involving Hamas, with no strong positive or negative connotations present.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/sport/milan-sign-italy-midfielder-ricci-torino-5220311": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article is a factual report of a football transfer with no inherent positive or negative implications.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/asia/malaysia-dismantles-islamic-state-network-involving-workers-bangladesh-5220231": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Dismantling an ISIS network is generally negative news.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/world/europe-summer-travel-season-tourism-united-states-trump-5220211": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Article discusses negative perceptions of the US, specifically related to unwelcoming policies.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/sport/spl-singapore-premier-league-football-foreign-players-increase-concerns-5220141": {
+    "place": "Jalan Besar Stadium",
+    "sentiment": "neutral",
+    "reason": "The article discusses a change in the Singapore Premier League rules.",
+    "emoji": " neutrálna tvár",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/jail-driving-ban-man-who-did-not-stop-after-fatal-accident-pedestrian-and-drove-lorry-straight-malaysia-2436241": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article only contains 'TODAY file photo' and lacks specific content, making sentiment impossible to determine.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/jail-man-who-was-first-four-brothers-start-sexually-abusing-8-year-old-sister-2426916": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "The article describes a severe case of child sexual abuse.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/gen-zen-mental-declutter-focus-negative-thoughts-2418601": {
+    "place": null,
+    "sentiment": "positive",
+    "reason": "The article discusses mental decluttering and its positive impact on focus and well-being.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/us-china-identity-politics-leadership-iron-lawrence-wong-economist-2419311": {
+    "place": "Istana",
+    "sentiment": "neutral",
+    "reason": "The article discusses Lawrence Wong's interview on various topics.",
+    "emoji": "📰",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/12-people-investigated-suspected-involvement-extortion-letters-fake-obscene-photos-2415056": {
+    "place": "Singapore Police Force",
+    "sentiment": "negative",
+    "reason": "Investigation into extortion suggests criminal activity.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/my-chief-my-pm-tributes-flow-prime-minister-lee-hsien-loong-final-may-day-rally-2414746": {
+    "place": "Istana",
+    "sentiment": "positive",
+    "reason": "Tributes indicate a generally positive farewell.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/satisfaction-completeness-lee-hsien-loong-2414486": {
+    "place": "The Istana",
+    "sentiment": "positive",
+    "reason": "Speech highlights satisfaction with achievements.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/beyond-game-how-football-programme-empowers-underprivileged-youth-values-and-character-growth-2412501": {
+    "place": "Jalan Besar Stadium",
+    "sentiment": "positive",
+    "reason": "Empowerment and character growth are positive outcomes.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/labour-movement-dismayed-timing-yahoo-and-ninja-van-layoffs-may-day-2414301": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/youngest-singaporean-mount-everest-base-camp-2414146": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/actor-comedian-suhaimi-yusof-stroke-hospital-stable-2414061": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/man-jailed-345-years-killing-5-year-old-daughter-confining-his-children-toilet-months-2414121": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/trending-south-korean-man-impress-nasi-padang-order-malay-2413811": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/corruption-related-reports-fall-8-2023-situation-firmly-under-control-cpib-2413961": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/spanish-authorities-find-cpf-nomination-note-ipad-singaporean-woman-killed-spain-report-2413791": {
+    "place": "Central Provident Fund Board",
+    "sentiment": "negative",
+    "reason": "The article discusses the death of a Singaporean woman.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/chubbs-insurance-cheat-11-million-false-claims-2413451": {
+    "place": "Chubbs Insurance Singapore",
+    "sentiment": "negative",
+    "reason": "Fraud and jail sentence indicate a negative situation.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/husband-beat-wife-domestic-violence-topless-screenshot-sent-image-brother-inlaw-2413341": {
+    "place": "State Courts of Singapore",
+    "sentiment": "negative",
+    "reason": "The article describes a crime, indicating a negative situation.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/gen-zen-breathing-techniques-wim-hof-method-2412531": {
+    "place": null,
+    "sentiment": "positive",
+    "reason": "The article discusses techniques to relieve stress and improve well-being.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/oversteer-singapore-car-racing-film-derrick-lui-2412526": {
+    "place": "Singapore",
+    "sentiment": "neutral",
+    "reason": "The article discusses the making of a car-racing film in Singapore.",
+    "emoji": "🎬",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/singaporean-woman-killed-spain-had-bought-insurance-suspect-dozens-pay-respects-funeral-wake-2412521": {
+    "place": "Singapore",
+    "sentiment": "negative",
+    "reason": "Reports the death of a Singaporean",
+    "emoji": "😢",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/domestic-violence-childhood-trauma-singaporeans-businesswoman-pastoral-counsellor-repair-mental-health-2412131": {
+    "place": "Singapore",
+    "sentiment": "positive",
+    "reason": "Focuses on repairing mental health after domestic violence.",
+    "emoji": "❤️",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/bank-singapore-uncovers-misuse-medical-benefits-fires-some-employees-2412206": {
+    "place": "Bank of Singapore",
+    "sentiment": "negative",
+    "reason": "Misuse of benefits and firing of employees indicates a negative event.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/billion-dollar-money-laundering-case-suspect-5-new-charges-3-earlier-2411746": {
+    "place": "Singapore State Courts",
+    "sentiment": "negative",
+    "reason": "Money laundering and failure to explain large sums of money are negative events.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/touched-donations-pour-embattled-live-turtle-museum-plea-operator-2411796": {
+    "place": "Live Turtle and Tortoise Museum",
+    "sentiment": "positive",
+    "reason": "Donations pouring in after a plea suggests positive support.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/hdb-resale-prices-rise-18-q1-2024-transactions-8-2411971": {
+    "place": "HDB Hub",
+    "sentiment": "neutral",
+    "reason": "Reports a factual increase in prices and transactions.",
+    "emoji": "📊",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/singapores-economy-boosted-taylor-swift-coldplay-shows-over-half-concertgoers-likely-overseas-2411916": {
+    "place": "National Stadium",
+    "sentiment": "positive",
+    "reason": "The article discusses economic benefits from concerts.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/avocado-bell-curve-god-nus-2411866": {
+    "place": "National University of Singapore",
+    "sentiment": "positive",
+    "reason": "The article describes a lighthearted and humorous student activity.",
+    "emoji": "😂",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/mfa-director-general-admits-lying-ministry-about-use-diplomatic-bags-2411871": {
+    "place": "Ministry of Foreign Affairs",
+    "sentiment": "negative",
+    "reason": "A public official lied to their ministry.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/far-east-shopping-centre-enbloc-sale-shop-owners-move-orchard-towers-2410736": {
+    "place": "Far East Shopping Centre",
+    "sentiment": "neutral",
+    "reason": "The article reports on an en-bloc sale attempt and potential shop owner moves or retirements, which is factual and doesn't express strong positive or negative emotion.",
+    "emoji": "🏢",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/changi-airports-passenger-traffic-q1-2024-surpasses-pre-pandemic-levels-2411256": {
+    "place": "Changi Airport",
+    "sentiment": "positive",
+    "reason": "Passenger traffic surpassing pre-pandemic levels indicates recovery and growth.",
+    "emoji": "✈️",
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/man-20-days-jail-43-cats-neglect-water-food-biggest-nparks-cruelty-case-2410961": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/dip-private-school-graduates-find-work-6-months-rose-previous-2-years-2410916": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.todayonline.com/singapore/last-accused-person-orchard-towers-fatal-fight-gets-life-imprisonment-murder-2410981": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/lim-yuen-li/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/titus-low-slap-allegations/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/trump-big-beautiful-bill-passes/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/man-support-trump-wife-detained/": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article reports on someone's opinion on Donald Trump and their spouse's detention, with no inherent positivity or negativity.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/man-naked-lover-husband-no-sex/": {
+    "place": "Sengkang",
+    "sentiment": "negative",
+    "reason": "Involves infidelity and public indecency.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/naomi-neo-1-million-followers/": {
+    "place": "Singapore",
+    "sentiment": "positive",
+    "reason": "Achieving a milestone of 1 million followers is generally viewed positively.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/nct-dream-singapore-2025/": {
+    "place": "Singapore Indoor Stadium",
+    "sentiment": "positive",
+    "reason": "Exciting concert announcement",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/diogo-jota-crash/": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Car crash incident",
+    "emoji": "😥",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/dian-xiao-er-duck-race/": {
+    "place": "Adventure Cove Waterpark",
+    "sentiment": "positive",
+    "reason": "Charity event with a prize.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/trump-says-no-progress-on-ending-war-in-ukraine-after-call-with-putin-russia-bombs-kyiv-after/": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "The article describes a war and bombing.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/obese-officers-macc/": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article discusses a policy regarding obese officers in Malaysia.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/jacky-cheung-singapore-sold-out/": {
+    "place": "Singapore Indoor Stadium",
+    "sentiment": "positive",
+    "reason": "Concerts being sold out indicates high demand and excitement.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/youth-stealing-computer-part-sim-lim/": {
+    "place": "Sim Lim Square",
+    "sentiment": "negative",
+    "reason": "Theft occurred at the location.",
+    "emoji": "😞",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/temperatures-of-122-sembawang/": {
+    "place": "Sembawang",
+    "sentiment": "negative",
+    "reason": "Record high temperatures underground indicate potential environmental concerns.",
+    "emoji": "🔥",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/malaysia-gun-violence/": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Violent attack with weapons",
+    "emoji": "😠",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/lambency-detailing-unauthorised-customer-review-chatgpt/": {
+    "place": "Sgcarmart",
+    "sentiment": "negative",
+    "reason": "Company caught posting fake reviews, damaging trust.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/sg60-voucher-fnb/": {
+    "place": "Singapore",
+    "sentiment": "positive",
+    "reason": "Promotion of local businesses and voucher usage.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/robertson-opu-for-sale/": {
+    "place": "Robertson Walk",
+    "sentiment": "neutral",
+    "reason": "Reports on a new property development.",
+    "emoji": "🏢",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/sellers-stamp-duty-singapore-increase/": {
+    "place": "Singapore Land Authority",
+    "sentiment": "neutral",
+    "reason": "Article reports on a tax change, not inherently positive or negative.",
+    "emoji": "📰",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/pritam-singh-podcast-pap-response/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/diogo-jota-tribute/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/japanese-singer-ayumi-hamasaki-apparently-spotted-at-mbs-lau-pat-sat-ahead-of-spore-concert/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/elderly-couple-non-existent-cable-car/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/scoot-new-flights-da-nang-nha-trang-kota-bharu/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/japan-earthquake-prediction/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/man-57-pap-tore-posters/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/viral-thai-hunks-restaurant-closing-down/": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Restaurant closing down",
+    "emoji": "😥",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/man-fled-traffic-police-check-arrested-katong/": {
+    "place": "Katong",
+    "sentiment": "negative",
+    "reason": "A man fled and was found with drugs and forged documents.",
+    "emoji": "😞",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/japanese-prostitution-marina-bay-sands-syndicate-jail/": {
+    "place": "Marina Bay Sands",
+    "sentiment": "negative",
+    "reason": "Involves exploitation and illegal activities.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/diogo-jota-dies/": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Death of a young person is sad",
+    "emoji": "😞",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/world/france-air-traffic-controllers-strike-flights-cancelled-europe-5220546": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Travel chaos indicates a negative impact.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/east-asia/china-spares-major-cognac-makers-eu-brandy-dumping-duties-5220486": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article reports on a trade decision with no clear positive or negative implication.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/bukit-batok-accident-two-injured/": {
+    "place": "Bukit Batok",
+    "sentiment": "negative",
+    "reason": "Pedestrians injured in a car accident.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/foreigners-taking-on-platform-work-illegally-ntuc-calls-for-workgroup-to-look-into-issue": {
+    "place": "NTUC Centre",
+    "sentiment": "negative",
+    "reason": "The article discusses illegal work affecting local workers' earnings.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/housing/sellers-stamp-duty-hike-will-curb-short-term-speculation-market-effect-likely-minimal-analysts": {
+    "place": "Singapore Land Authority",
+    "sentiment": "neutral",
+    "reason": "The article discusses government policy changes related to property in Singapore.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/ng-chee-meng-foreign-worker-platform/": {
+    "place": "Ministry of Manpower",
+    "sentiment": "negative",
+    "reason": "Concerns about illegal foreign workers.",
+    "emoji": "😠",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/paternity-leave-take-up-in-spore-rises-to-56-in-2023-experts-hope-for-further-boost-after-extension": {
+    "place": "Ministry of Social and Family Development",
+    "sentiment": "positive",
+    "reason": "Increase in paternity leave take-up indicates progress",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/fewer-marriages-and-births-in-singapore-in-2024-greater-stability-for-later-cohorts": {
+    "place": "Registry of Marriages",
+    "sentiment": "negative",
+    "reason": "Decrease in marriages and births indicates a negative demographic trend.",
+    "emoji": "📉",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/jail-for-man-who-conducted-surveillance-of-warehouse-used-by-hsa-to-store-seized-vapes-worth-6-5m": {
+    "place": "Health Sciences Authority (HSA)",
+    "sentiment": "negative",
+    "reason": "Man jailed for obstructing justice related to seized vapes.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/health/more-nurses-to-anchor-care-in-community-settings-as-singapores-population-ages": {
+    "place": "Ministry of Health (Singapore)",
+    "sentiment": "positive",
+    "reason": "Recognition of nurses and focus on community care.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/eligible-sporeans-to-get-up-to-850-in-cash-up-to-450-in-medisave-top-ups-in-august": {
+    "place": "Central Provident Fund Board",
+    "sentiment": "positive",
+    "reason": "Government providing financial assistance to eligible citizens.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/four-golf-courses-to-close-by-2035-leaving-singapore-with-12-courses": {
+    "place": "Mandai Executive Golf Course",
+    "sentiment": "neutral",
+    "reason": "Reports closure of golf courses.",
+    "emoji": "📰",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/1-46b-nickel-scam-ng-yu-zhi-opts-to-remain-silent-after-judge-calls-for-his-defence": {
+    "place": "Supreme Court of Singapore",
+    "sentiment": "negative",
+    "reason": "Accused remains silent in a large scam case.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/van-driver-dies-after-collision-with-truck-in-seletar": {
+    "place": "Seletar",
+    "sentiment": "negative",
+    "reason": "A person died in a collision.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/courts-crime/ex-massage-therapist-gets-4-months-jail-for-teaching-doctrine-contrary-to-islamic-laws": {
+    "place": "Singapore",
+    "sentiment": "negative",
+    "reason": "Jail sentence for religious teaching deemed contrary to Islamic laws.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/new-skillsfuture-requirements-by-april-2026-to-mandate-regular-training-for-adult-educators": {
+    "place": "Lifelong Learning Institute",
+    "sentiment": "positive",
+    "reason": "New skills requirements will upgrade educators.",
+    "emoji": "👍",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/transport/construction-starts-on-cross-island-line-phase-2-6-mrt-stations-in-spores-west-ready-by-2032": {
+    "place": "Jurong Lake District",
+    "sentiment": "neutral",
+    "reason": "Construction of new MRT stations is generally a neutral event, focusing on future infrastructure development.",
+    "emoji": "🚇",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/health/smart-sensors-used-in-study-to-detect-cognitive-decline-in-seniors-who-live-alone": {
+    "place": "Singapore General Hospital",
+    "sentiment": "positive",
+    "reason": "Technology helping seniors age better.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/more-students-juggle-studying-and-working-to-support-their-families": {
+    "place": "Ministry of Education Singapore",
+    "sentiment": "neutral",
+    "reason": "The article describes a situation without expressing strong positive or negative feelings.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/politics/mps-should-not-ask-questions-to-clock-numbers-focus-should-be-improving-sporeans-lives-speaker": {
+    "place": "Parliament House",
+    "sentiment": "neutral",
+    "reason": "Discussing parliamentary questions and improving lives, no strong positive or negative tone.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/politics/sequencing-and-standards-indranee-on-role-of-leader-of-the-house": {
+    "place": "Parliament House, Singapore",
+    "sentiment": "neutral",
+    "reason": "The article discusses the role of the Leader of the House in Parliament, which is neither particularly positive nor negative.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/jobs/askst-jobs-facing-intrusive-demands-from-your-employer-heres-what-you-can-do": {
+    "place": "Ministry of Manpower",
+    "sentiment": "neutral",
+    "reason": "Provides advice on employment issues.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/health/life-after-blazing-biomedical-research-trail-in-spore-renowned-scientist-breaks-new-ground-at-age": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/losing-her-dad-a-month-into-poly-she-powered-through-work-shifts-and-studies-to-support-her-family": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/parenting-education/changkat-primary-school-turns-2000-old-uniforms-into-new-creations-for-60th-anniversary": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/nus-college-draws-10000-applications-for-400-places-showing-strong-liberal-arts-interest": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/enduring-presence-of-vernacular-media-in-spore-not-by-chance-says-josephine-teo-as-tamil-murasu": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/woman-on-smrt-bus-190-injured-after-bottle-thrown-at-vehicle-leaves-hole-in-window": {
+    "place": "SMRT Bus Service 190",
+    "sentiment": "negative",
+    "reason": "Someone was injured after a bottle was thrown at a bus, damaging it.",
+    "emoji": "😞",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/transport/over-half-of-106-new-mrt-trains-added-to-north-south-east-west-lines-fleet-renewal-to-be-completed": {
+    "place": "North-South, East-West lines",
+    "sentiment": "positive",
+    "reason": "MRT upgrades and fleet completion are positive developments.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/parenting-education/minor-issues-what-needs-to-be-done-to-get-more-daughters-into-stem-careers": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Article discusses barriers and unequal pay.",
+    "emoji": "🙁",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/parenting-education/overlooked-glass-child-the-sibling-of-a-special-needs-kid": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Discusses the challenges faced by siblings of special needs children.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/parenting-education/a-meal-just-for-the-guys-except-mum-is-also-invited": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article is descriptive and doesn't convey strong emotion.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/health/moh-studying-18-proposals-to-integrate-tcm-into-public-healthcare": {
+    "place": "Ministry of Health (Singapore)",
+    "sentiment": "neutral",
+    "reason": "Informative announcement about TCM integration study.",
+    "emoji": "📰",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/red-lions-and-naval-divers-join-forces-for-jump-of-unity-at-ndp-2025": {
+    "place": "The Padang",
+    "sentiment": "positive",
+    "reason": "Celebrating national unity and collaboration during a national event.",
+    "emoji": "🇸🇬",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/tank-collides-into-traffic-light-during-national-day-parade-national-education-show": {
+    "place": "National Day Parade Practice Site",
+    "sentiment": "neutral",
+    "reason": "Accident reported, no injuries",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/transport/meet-the-caas-officer-who-helmed-revision-of-building-height-limits-near-airports-across-the-world": {
+    "place": "Civil Aviation Authority of Singapore (CAAS)",
+    "sentiment": "neutral",
+    "reason": "The article describes a neutral, factual event of a CAAS officer leading a review.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/housing/first-bto-project-in-sembawang-north-to-be-offered-in-july-launch": {
+    "place": "Sembawang",
+    "sentiment": "neutral",
+    "reason": "Informative news about housing availability.",
+    "emoji": "📰",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/health/how-soya-sauce-could-help-treat-cancer": {
+    "place": null,
+    "sentiment": "positive",
+    "reason": "Promising results in cancer treatment.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/ttsh-to-demolish-century-old-pavilion-wards-keeping-one-as-heritage-marker": {
+    "place": "Tan Tock Seng Hospital",
+    "sentiment": "neutral",
+    "reason": "Demolition of old buildings and construction of new facilities is generally neutral.",
+    "emoji": "🏢",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/dont-view-your-first-property-as-a-dream-home-get-a-foothold-in-the-market-instead-propnexs-ismail": {
+    "place": "PropNex",
+    "sentiment": "positive",
+    "reason": "Story of overcoming adversity and achieving success",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/credit-reports-among-personal-data-of-190000-breached-put-for-sale-on-dark-web-it-vendor-fined": {
+    "place": "Ezynetic",
+    "sentiment": "negative",
+    "reason": "Data breach and fine indicate a negative situation.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/cdac-honours-264-volunteers-partners-at-inaugural-combined-appreciation-day": {
+    "place": "CDAC Building",
+    "sentiment": "positive",
+    "reason": "The article highlights the appreciation of volunteers and future program expansion.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/asean-needs-bolder-reforms-to-attract-investments-in-a-more-fragmented-global-economy-pm-wong": {
+    "place": "Istana",
+    "sentiment": "neutral",
+    "reason": "Discussing ASEAN economic reforms, which is neither positive nor negative.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.straitstimes.com/singapore/10-year-old-who-volunteered-with-parents-since-she-was-three-wins-award-for-compassion": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/obsessions/star-awards-2025-best-watches-5223776": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/east-asia/china-brics-not-seeking-confrontation-trump-tariff-threat-5224371": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/business/oil-pares-loss-tight-market-offsets-opecs-bigger-hike-5223596": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/asia/malaysia-chief-justice-vacant-anwar-interference-rafizi-pkr-5224311": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/east-asia/japan-reduce-reliance-us-trade-tariff-opposition-head-donald-trump-5224356": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article discusses trade relations between Japan and the US.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/marriage-rates-singapore-fall-7-cent-age-first-time-parents-rise-infant-care-childcare-5220376": {
+    "place": "Ministry of Social and Family Development (MSF)",
+    "sentiment": "negative",
+    "reason": "Marriage rates decreased and divorce rates increased.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/business/japan-activation-capital-takes-stake-electronics-firm-omron-5224341": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The news is about a business transaction with no sentiment.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/entertainment/tyler-ten-treat-shin-ramyun-instant-noodles-win-big-star-awards-2025-5223951": {
+    "place": "Mediacorp",
+    "sentiment": "positive",
+    "reason": "Actor won awards and will treat himself.",
+    "emoji": "🥳",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/east-asia/north-korea-bars-western-influencers-trade-fair-tour-china-5224291": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article reports a factual event without expressing strong positive or negative feelings.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/sport/bertranou-out-argentine-squad-petti-arrives-after-club-final-5224276": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "Reports player changes in a rugby squad.",
+    "emoji": "📰",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/immersive-titanic-exhibition-singapore-5223866": {
+    "place": "Fever Exhibition Hall",
+    "sentiment": "neutral",
+    "reason": "The article announces an upcoming exhibition.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/shaikh-syed-isa-semait-dies-87-former-mufti-muis-5224201": {
+    "place": "Islamic Religious Council of Singapore",
+    "sentiment": "positive",
+    "reason": "The article highlights his positive contributions to education and inter-religious harmony.",
+    "emoji": "🙏",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/sport/irish-core-strong-lions-team-act-brumbies-clash-5224261": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article is about a rugby match, with no inherent positive or negative connotation.",
+    "emoji": "🏉",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/gstv-cash-15-million-singaporeans-receive-cash-payouts-august-5224246": {
+    "place": "Ministry of Finance Singapore",
+    "sentiment": "positive",
+    "reason": "Cash payouts are generally seen as a positive for recipients.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/golf-course-lease-expire-no-renewal-sicc-keppel-club-mandai-5223876": {
+    "place": "Singapore Island Country Club",
+    "sentiment": "neutral",
+    "reason": "Reports a change in land use for golf courses.",
+    "emoji": "📰",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/singapore/man-vape-warehouse-stash-hsa-6-million-caught-red-handed-jail-5224191": {
+    "place": "Health Sciences Authority (HSA)",
+    "sentiment": "negative",
+    "reason": "Involves illegal activity and arrest.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/business/australian-telco-vocus-receives-government-nod-tpg-telecom-deal-5224231": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The news is about a business deal in Australia and doesn't express any particular emotion.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/business/frances-capgemini-buy-outsourcing-firm-wns-33-billion-5224186": {
+    "place": null,
+    "sentiment": "neutral",
+    "reason": "The article reports on a business acquisition; no strong positive or negative elements are apparent.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/entertainment/chow-yun-fat-singapore-hawker-centres-singlish-5223901": {
+    "place": "Mediacorp",
+    "sentiment": "positive",
+    "reason": "Mentions a popular actor enjoying Singaporean food and language.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://www.channelnewsasia.com/asia/malaysia-vep-singapore-drivers-johor-bahru-fine-5224091": {
+    "place": "Woodlands Checkpoint",
+    "sentiment": "negative",
+    "reason": "Drivers are incurring significant fines.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/bendemeer-fresh-cockles-fried-kway-teow/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/personal-attacks-unnecessary-faishal-ibrahim/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/teens-pose-underage-grindr-telegram-blackmail-pedophiles/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/gst-voucher-cash-singaporeans-aug-6/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/ttsh-demolish-pavilion-wards/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/chan-chun-sing-parakeets-bukit-merah/": {
+    "place": "Bukit Merah",
+    "sentiment": "positive",
+    "reason": "The article describes a pleasant and interesting event attracting a crowd.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/casuarina-curry-little-india-singapore/": {
+    "place": "Dunlop Street",
+    "sentiment": "neutral",
+    "reason": "New restaurant opening is generally neutral.",
+    "emoji": "😐",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/warren-golf-orchid-country-club-lease-expire-2030-residential-use/": {
+    "place": "Orchid Country Club",
+    "sentiment": "neutral",
+    "reason": "The news is a factual announcement about land use changes.",
+    "emoji": "📰",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/women-begging-chinatown/": {
+    "place": "Chinatown",
+    "sentiment": "negative",
+    "reason": "Suggests potential exploitation or scamming of vulnerable elderly people.",
+    "emoji": "😞",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/texas-floods-82-dead/": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Reports of deaths and missing people due to flash floods.",
+    "emoji": "😞",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/jj-lin-100th-show-birds-nest/": {
+    "place": null,
+    "sentiment": "positive",
+    "reason": "Successful milestone in tour",
+    "emoji": "🎉",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/star-awards-2025-doreen-ivy-ada-2/": {
+    "place": "Mediacorp Campus",
+    "sentiment": "positive",
+    "reason": "Celebrating and thanking people, indicating positive recognition.",
+    "emoji": "🎉",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/star-awards-2025-highlights/": {
+    "place": "The Star Performing Arts Centre",
+    "sentiment": "positive",
+    "reason": "Star Awards are generally seen as a positive event celebrating local talent.",
+    "emoji": "😊",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/my-chemical-romance-concert-2026/": {
+    "place": "Singapore Indoor Stadium",
+    "sentiment": "positive",
+    "reason": "A popular band is playing a concert in Singapore.",
+    "emoji": "😃",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/outfit-review-rating-star-awards-2025/": {
+    "place": "Mediacorp Campus",
+    "sentiment": "neutral",
+    "reason": "Reviewing outfits is generally a neutral activity.",
+    "emoji": "🧐",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/star-awards-2025-winners/": {
+    "place": "The Star Theatre",
+    "sentiment": "positive",
+    "reason": "Awards ceremonies are generally positive events celebrating achievement.",
+    "emoji": "🎉",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/yvonne-lim-star-awards-2025/": {
+    "place": "Mediacorp Campus",
+    "sentiment": "negative",
+    "reason": "The article discusses the death of the actress's mother, which is a sad event.",
+    "emoji": "😢",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/van-driver-35-killed-in-fatal-accident-with-tipper-truck-along-seletar-west-link/": {
+    "place": "Seletar West Link",
+    "sentiment": "negative",
+    "reason": "Fatal accident involving death",
+    "emoji": "😥",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/chinese-woman-sold-two-sons/": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Selling children is a highly negative act.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/msian-preachers-videos-four-wives-arrested/": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Involves sexual abuse and exploitation.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/man-woman-smuggle-phones-china/": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "Abandoning a baby and attempting to escape police indicates a negative situation.",
+    "emoji": "😥",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/chinese-model-tricked-myanmar/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/bottle-thrown-at-smrt-double-decker-bus/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/tank-hits-traffic-light-ndp/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/jota-liverpool-wages/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/sm-lee-cpf-self-reliance/": {
+    "place": null,
+    "sentiment": null,
+    "reason": null,
+    "emoji": null,
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/osaka-sexual-assault/": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "The article describes a violent crime.",
+    "emoji": "😔",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/iranian-toddler-moscow-airport/": {
+    "place": null,
+    "sentiment": "negative",
+    "reason": "The article describes a violent incident involving a toddler.",
+    "emoji": "😞",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/chow-yun-fat-bak-kut-teh/": {
+    "place": "Rangoon Road",
+    "sentiment": "positive",
+    "reason": "Mentions a positive experience (delicious food and celebrity sighting).",
+    "emoji": "😋",
+    "is_sg_related": true
+  },
+  "https://mothership.sg/2025/07/sembawang-north-hdb-bto/": {
+    "place": "HDB Hub",
+    "sentiment": "neutral",
+    "reason": "Announcement of a new housing project.",
+    "emoji": "😐",
+    "is_sg_related": true
+  }
+}

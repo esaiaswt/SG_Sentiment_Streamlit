@@ -1,3 +1,4 @@
+
 streamlit
 requests
 beautifulsoup4
@@ -10,3 +11,4 @@ pyyaml
 branca
 python-dotenv
 streamlit_autorefresh
+google-generativeai
